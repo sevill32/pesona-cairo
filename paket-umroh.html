@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Paket Umroh | Pesona Cairo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Hanken+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+
+<link href="style.css" rel="stylesheet"/></head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="bg-secondary/95 backdrop-blur-md text-on-secondary docked full-width top-0 sticky border-b border-white/10 shadow-sm z-50 h-20">
+<div class="flex justify-between items-center px-margin-desktop w-full max-w-7xl mx-auto h-full">
+<div class="font-headline-md text-headline-md font-bold italic">Pesona Cairo</div>
+<!-- Desktop Nav Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="index.html">Beranda</a>
+<a class="text-primary-fixed font-bold border-b-2 border-primary-fixed pb-1" href="paket-umroh.html">Paket Umroh</a>
+<a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="wisata-cairo.html">Wisata Cairo</a>
+<a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="handling.html">Handling</a>
+<a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="tentang-kami.html">Tentang Kami</a>
+</div>
+<a class="btn bg-primary-container text-on-primary-container px-6 py-2.5 font-bold rounded-lg hover:bg-primary-fixed transition-all active:scale-95 duration-200" href="https://wa.me/201127847321">
+                Konsultasi Gratis
+            </a>
+</div>
+</nav>
+<main class="relative overflow-hidden">
+<!-- Hero & Breadcrumbs -->
+<header class="relative pt-16 pb-12 px-margin-desktop max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<nav class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md uppercase tracking-widest">
+<a class="hover:text-primary" href="index.html">BERANDA</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary">PAKET UMROH</span>
+</nav>
+<h1 class="font-headline-xl text-headline-xl text-on-surface">Pilih Perjalanan <br/><span class="text-primary">Spiritual Anda</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Kurasi paket ibadah Umrah dan Haji yang menggabungkan kekhusyukan ibadah dengan kenyamanan layanan premium di tanah suci dan Mesir.
+                </p>
+</div>
+<!-- Decorative Arabesque -->
+<div class="absolute top-0 right-0 w-96 h-96 arabesque-pattern pointer-events-none -mr-48 -mt-24"></div>
+</header>
+<!-- Main Catalog Section -->
+<section class="px-margin-desktop max-w-7xl mx-auto pb-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Sidebar Filters -->
+<aside class="lg:col-span-3 space-y-8">
+<div class="bg-surface-container-low p-8 border border-outline-variant/30 rounded-xl sticky top-28 shadow-sm">
+<div class="flex items-center gap-2 mb-6 border-b border-outline-variant/20 pb-4">
+<span class="material-symbols-outlined text-primary">filter_list</span>
+<h2 class="font-headline-md text-headline-md !text-lg">Filter</h2>
+</div>
+<!-- Filter Group: Jenis Paket -->
+<div class="mb-8">
+<h3 class="font-label-md text-label-md text-primary mb-4 uppercase">JENIS PAKET</h3>
+<div class="flex flex-col gap-3">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded border-outline text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Umroh Reguler</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="w-4 h-4 rounded border-primary text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Umroh Plus Mesir</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded border-outline text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">VIP / Private</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded border-outline text-primary focus:ring-primary" type="checkbox"/>
+<span class="font-body-md text-on-surface-variant group-hover:text-primary transition-colors">Haji Khusus</span>
+</label>
+</div>
+</div>
+<!-- Filter Group: Bulan -->
+<div class="mb-8">
+<h3 class="font-label-md text-label-md text-primary mb-4 uppercase">BULAN KEBERANGKATAN</h3>
+<select class="w-full bg-surface-container border-0 border-b border-primary text-on-surface font-body-md py-2 focus:ring-0 cursor-pointer">
+<option>Semua Bulan</option>
+<option>Ramadhan 2024</option>
+<option>Syawal 2024</option>
+<option>Muharram 2024</option>
+</select>
+</div>
+<!-- Filter Group: Harga -->
+<div class="mb-8">
+<h3 class="font-label-md text-label-md text-primary mb-4 uppercase">RENTANG HARGA</h3>
+<input class="w-full h-1 bg-outline-variant rounded-full appearance-none cursor-pointer accent-primary" type="range"/>
+<div class="flex justify-between mt-2 font-label-md text-[10px] text-on-surface-variant uppercase">
+<span class="">Rp 25jt</span>
+<span class="">Rp 100jt+</span>
+</div>
+</div>
+<button class="w-full py-3 bg-secondary text-on-secondary font-bold rounded-lg hover:bg-on-secondary-fixed-variant transition-all">
+                            Terapkan Filter
+                        </button>
+</div>
+</aside>
+<!-- Grid Packages -->
+<div class="lg:col-span-9">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Package Card 1: Plus Mesir (Highlighted) -->
+<div class="bg-surface-container-lowest border border-outline-variant shadow-sm overflow-hidden group rounded-xl">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A cinematic low-angle photograph of the majestic Great Pyramids of Giza under a golden hour Saharan sun. The sky is a gradient of deep amber and soft violet, creating a serene and timeless spiritual atmosphere. The textures of the ancient stones are highlighted by the warm, directional light, embodying a sense of sacred elegance and luxury heritage travel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKbIXT0oKWOx_uT_g0b_G5WDzqnez3FBDrfuohaU1ut0bIea8CVVxLZW061vdrZ7K578bcpcB7hvPcv066ubXZsBeyOQm_L0OAMNe8scLxkQ0idkTTE5m1jVsd5y0SDj7lwBzg5KalpK3iQn4ALtwgeFLM-hyHzzN6ox79RXHcU6vp977nV64Uay55UgWbV5r2a7KP6OBg0tfzcR-RKs82nnD3L-nz4dQsKsMJcw1NAYUseofgFOoUouq5jWUXxjFPJyfIjuQIXzQ"/>
+<div class="absolute top-4 left-4 bg-primary-container text-on-primary-container px-3 py-1 font-label-md text-[10px] rounded uppercase tracking-wider">TERPOPULER</div>
+<div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 text-primary font-headline-md rounded">9 Hari</div>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-md text-headline-md !text-xl mb-1">Umroh Plus Mesir</h3>
+<p class="font-body-md text-on-surface-variant italic">Ziarah Peradaban &amp; Ibadah</p>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-md text-[10px] text-on-surface-variant uppercase">MULAI DARI</span>
+<span class="font-headline-md text-primary">Rp 38.5jt</span>
+</div>
+</div>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">hotel</span>
+<span class="text-sm">Bintang 5: Pullman Zamzam &amp; Steigenberger</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">flight</span>
+<span class="text-sm">Saudi Airlines / Egypt Air Direct</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">restaurant</span>
+<span class="text-sm">Full Board (Catering Indonesia)</span>
+</div>
+</div>
+<div class="flex gap-4 border-t border-outline-variant/30 pt-6">
+<button class="flex-1 py-3 border border-primary text-primary font-bold gold-leaf-hover transition-all rounded-lg">Detail</button>
+<button class="flex-1 py-3 bg-primary text-on-primary font-bold hover:bg-on-primary-fixed-variant transition-all rounded-lg">Pesan Sekarang</button>
+</div>
+</div>
+</div>
+<!-- Package Card 2: Reguler -->
+<div class="bg-surface-container-lowest border border-outline-variant shadow-sm overflow-hidden group rounded-xl">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A serene wide shot of the Masjid al-Haram at night, with the Kaaba in the center surrounded by worshippers in white ihram. The lighting is ethereal, with cool moonlight contrasting against the warm glow of the mosque's interior lights. The architectural details of the minarets are sharp and elegant, conveying a sense of profound peace and devotion." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBILz_8LhNDppK84m7GzfEAuWQr4yXfJ18ChPbv6aVSHy2L3FK_h6PbuOB0qIMRk5y-uuqKcz0Q-5wyWf_GNKFuL9ih7R8wBRjCbnHF7uRh1adVn0XwC4RYxmN9jIIZoky5xH2D0H9dp1DzioD3R8ueNgnGoxe7RZv9si3YXxlkQcGOhrYpg2JeSr1eVnfwEHazKnlIBbc2A-dIz6euq5DWk2n-AJhGVoxNyJGwYf_frKpNhwdrIUgcL7ECc5HFLdZELNQTD_QMS4U"/>
+<div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 text-primary font-headline-md rounded">12 Hari</div>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-md text-headline-md !text-xl mb-1">Umroh Reguler</h3>
+<p class="font-body-md text-on-surface-variant italic">Fokus Ibadah Khusyuk</p>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-md text-[10px] text-on-surface-variant uppercase">MULAI DARI</span>
+<span class="font-headline-md text-primary">Rp 29.9jt</span>
+</div>
+</div>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">hotel</span>
+<span class="text-sm">Bintang 4: Elaf Kinda &amp; Al Shourfah</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">group</span>
+<span class="text-sm">Muthawif Berpengalaman 10+ Tahun</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="text-sm">Sisko-Patuh &amp; Asuransi Perjalanan</span>
+</div>
+</div>
+<div class="flex gap-4 border-t border-outline-variant/30 pt-6">
+<button class="flex-1 py-3 border border-primary text-primary font-bold gold-leaf-hover transition-all rounded-lg">Detail</button>
+<button class="flex-1 py-3 bg-primary text-on-primary font-bold hover:bg-on-primary-fixed-variant transition-all rounded-lg">Pesan Sekarang</button>
+</div>
+</div>
+</div>
+<!-- Package Card 3: VIP -->
+<div class="bg-surface-container-lowest border border-outline-variant shadow-sm overflow-hidden group rounded-xl">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="An opulent hotel suite overlooking the Masjid al-Haram in Makkah. The room is designed with contemporary classical elegance, featuring marble floors, plush gold fabrics, and intricate wood carvings. Soft morning light streams through large windows, creating a peaceful and luxurious setting for spiritual reflection and rest." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDERRACGe7nsfuw2CnpTfSW40VDRtd8KL9ZrTJ5xpEp1t5LIIihDGL5fYAhT_h5qvcI45OwgwSSMJKMZ4Mc4psOhdzOaWyvFqNztC8a0sAnE_FbR3Zf78sJ-xGbx_Va_q5VTXrb2GXErQHyKtIVF8uhpbKbRIi5uJEZRYJUKlpmDDyeDx7fNTGv2Ku82XIxahRYAzbfkql_05ifxTtk8s8X3tliL3gNkdrTFAV-U5dl4bMlCoKad-bF29A_i0eeGVeVsGFMbbG_BzY"/>
+<div class="absolute top-4 left-4 bg-tertiary-container text-on-tertiary-container px-3 py-1 font-label-md text-[10px] rounded uppercase tracking-wider">LUXURY</div>
+<div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 text-primary font-headline-md rounded">10 Hari</div>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-md text-headline-md !text-xl mb-1">VIP Private</h3>
+<p class="font-body-md text-on-surface-variant italic">Kenyamanan Tanpa Kompromi</p>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-md text-[10px] text-on-surface-variant uppercase">MULAI DARI</span>
+<span class="font-headline-md text-primary">Rp 55.0jt</span>
+</div>
+</div>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">workspace_premium</span>
+<span class="text-sm">Hotel Front-Row View Kaaba</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">directions_car</span>
+<span class="text-sm">Transportasi Private Luxury Car</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">support_agent</span>
+<span class="text-sm">Layanan Concierge 24 Jam</span>
+</div>
+</div>
+<div class="flex gap-4 border-t border-outline-variant/30 pt-6">
+<button class="flex-1 py-3 border border-primary text-primary font-bold gold-leaf-hover transition-all rounded-lg">Detail</button>
+<button class="flex-1 py-3 bg-primary text-on-primary font-bold hover:bg-on-primary-fixed-variant transition-all rounded-lg">Pesan Sekarang</button>
+</div>
+</div>
+</div>
+<!-- Package Card 4: Haji -->
+<div class="bg-surface-container-lowest border border-outline-variant shadow-sm overflow-hidden group rounded-xl">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A historical mosque interior in Cairo with high ceilings, grand chandeliers, and sunlight filtering through stained glass windows. The atmosphere is quiet and dignified, showcasing the rich Islamic architectural heritage of Egypt. Deep green carpets and golden wall inscriptions reinforce the Al-Azhar green and deep gold color palette of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeFxYZapDTXHCC3F4WPRxIXCG9YEbZJcrMuvJ_IEggtAIZXPtalIvvNlPjdEF9CIjFYSKZ4EwzFfJRYn9bkhC1BJpC08lJKkWNArPXNIJN0YtevlWoF3ZMdF-tObBjq45Dh8aAqxvMV4zz78-7ypehvXvMHN_wTYv8O0WKAa-GR24-iQWnCwjUOsxaG67S_3qgrOqXyvdvJfcYiYUQ2GQjvx_uyjEZ_DKnKW4Ri6dgdVueWQjhnoCcSq7PqO7PrGHtXIyIDiRJxmw"/>
+<div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 text-primary font-headline-md rounded">25 Hari</div>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline-md text-headline-md !text-xl mb-1">Haji Furoda 2024</h3>
+<p class="font-body-md text-on-surface-variant italic">Berangkat Tanpa Antre</p>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-md text-[10px] text-on-surface-variant uppercase">MULAI DARI</span>
+<span class="font-headline-md text-primary">Rp 280jt</span>
+</div>
+</div>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">confirmation_number</span>
+<span class="text-sm">Visa Haji Furoda Resmi (Mujamalah)</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">apartment</span>
+<span class="text-sm">Tenda Maktab VIP di Arafah &amp; Mina</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">medical_services</span>
+<span class="text-sm">Tim Medis &amp; Pembimbing Terpadu</span>
+</div>
+</div>
+<div class="flex gap-4 border-t border-outline-variant/30 pt-6">
+<button class="flex-1 py-3 border border-primary text-primary font-bold gold-leaf-hover transition-all rounded-lg">Detail</button>
+<button class="flex-1 py-3 bg-primary text-on-primary font-bold hover:bg-on-primary-fixed-variant transition-all rounded-lg">Pesan Sekarang</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section: Konsultasi Kustom -->
+<section class="bg-secondary relative py-20 px-margin-desktop overflow-hidden mt-xl">
+<div class="absolute inset-0 arabesque-pattern pointer-events-none opacity-10"></div>
+<div class="max-w-7xl mx-auto text-center relative z-10">
+<div class="fade-divider mb-12 opacity-30"></div>
+<h2 class="font-headline-xl text-headline-xl text-on-secondary mb-6">Butuh Paket yang <span class="italic text-primary-fixed">Personal?</span></h2>
+<p class="font-body-lg text-body-lg text-on-secondary/80 max-w-2xl mx-auto mb-10">
+                    Kami memahami setiap jamaah memiliki kebutuhan yang berbeda. Diskusikan rute, durasi, dan budget impian Anda dengan konsultan spesialis kami.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-primary-fixed text-on-primary-fixed px-12 py-4 font-bold rounded-lg text-lg hover:bg-primary-fixed-dim transition-all shadow-lg">
+                        Konsultasi via WhatsApp
+                    </button>
+<button class="border-2 border-primary-fixed text-primary-fixed px-12 py-4 font-bold rounded-lg text-lg hover:bg-primary-fixed/10 transition-all">
+                        Request Penawaran (Email)
+                    </button>
+</div>
+<div class="fade-divider mt-12 opacity-30"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface border-t border-primary/20 py-24 full-width">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-7xl mx-auto">
+<!-- Brand Column -->
+<div class="space-y-6">
+<div class="font-headline-md text-headline-md text-on-secondary italic font-bold">Pesona Cairo</div>
+<p class="text-on-secondary/60 font-body-md text-sm leading-relaxed">
+                    Penyelenggara Perjalanan Ibadah Umrah (PPIU) resmi dengan akreditasi A. Fokus pada pelayanan prima dan kenyamanan spiritual.
+                </p>
+</div>
+<!-- Quick Links -->
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-primary-fixed-dim uppercase tracking-widest">LAYANAN</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-on-secondary/70 hover:text-on-secondary transition-colors" href="#">Paket Umrah Reguler</a></li>
+<li class=""><a class="text-on-secondary/70 hover:text-on-secondary transition-colors" href="#">Paket Umrah Plus</a></li>
+<li class=""><a class="text-on-secondary/70 hover:text-on-secondary transition-colors" href="#">Haji Furoda</a></li>
+<li class=""><a class="text-on-secondary/70 hover:text-on-secondary transition-colors" href="#">Visa &amp; Handling</a></li>
+</ul>
+</div>
+<!-- More Links -->
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-primary-fixed-dim uppercase tracking-widest">PERUSAHAAN</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-on-secondary/70 hover:text-on-secondary transition-colors" href="#">Galeri</a></li>
+<li class=""><a class="text-on-secondary/70 hover:text-on-secondary transition-colors" href="tentang-kami.html">Kontak</a></li>
+<li class=""><a class="text-on-secondary/70 hover:text-on-secondary transition-colors" href="#">Syarat &amp; Ketentuan</a></li>
+<li class=""><a class="text-on-secondary/70 hover:text-on-secondary transition-colors" href="#">Kebijakan Privasi</a></li>
+</ul>
+</div>
+<!-- Social/Contact -->
+<div class="space-y-4">
+<h4 class="font-label-md text-label-md text-primary-fixed-dim uppercase tracking-widest">HUBUNGI KAMI</h4>
+<p class="text-on-secondary/70 text-sm leading-relaxed">
+                    Gedung Menara Mulia, Lantai 12<br/>
+                    Jl. Gatot Subroto, Jakarta Selatan<br/>
+                    support@pesonacairo.id
+                </p>
+<div class="flex gap-4 pt-4 opacity-80 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary-fixed cursor-pointer">share</span>
+<span class="material-symbols-outlined text-primary-fixed cursor-pointer">language</span>
+<span class="material-symbols-outlined text-primary-fixed cursor-pointer">alternate_email</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-margin-desktop mt-20 pt-8 border-t border-white/5 text-center">
+<p class="text-on-secondary/40 font-label-md text-[10px] tracking-[0.2em] uppercase">
+                © 2024 Pesona Cairo. Terdaftar Kemenag RI / PPIU No. 123456.
+            </p>
+</div>
+</footer>
+
+<script src="script.js"></script></body></html>
