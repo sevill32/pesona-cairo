@@ -358,22 +358,15 @@
 <p class="text-on-secondary/50 text-label-md">© 2024 Pesona Cairo. Terdaftar Kemenag RI / PPIU No. 123456.</p>
 </div>
 </footer>
+<script src="script.js"></script>
 <script>
-    window.addEventListener('scroll', () => {
-        const nav = document.querySelector('nav');
-        if (window.scrollY > 50) {
-            nav.classList.add('shadow-md', 'h-16');
-            nav.classList.remove('h-20');
-        } else {
-            nav.classList.remove('shadow-md', 'h-16');
-            nav.classList.add('h-20');
-        }
-    });
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
 
-    document.querySelectorAll('button').forEach(button => {
-        button.addEventListener('mousedown', () => button.classList.add('scale-95'));
-        button.addEventListener('mouseup', () => button.classList.remove('scale-95'));
-        button.addEventListener('mouseleave', () => button.classList.remove('scale-95'));
-    });
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+});
 </script>
-</body></html>
+
+</body>
+</html>
