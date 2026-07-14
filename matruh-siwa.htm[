@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Umroh Plus Mesir - Pesona Cairo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Hanken+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="bg-secondary/90 dark:bg-secondary/90 backdrop-blur-md docked full-width top-0 sticky border-b border-outline-variant/20 shadow-sm z-50 transition-all duration-300">
+<div class="flex justify-between items-center px-margin-desktop w-full max-w-container-max mx-auto h-20">
+<div class="font-headline-md text-headline-md font-bold text-on-secondary italic tracking-tighter">Pesona Cairo</div>
+<nav class="hidden md:flex gap-lg items-center">
+<a class="text-on-secondary/80 font-medium hover:text-on-secondary hover:bg-on-secondary/10 px-sm py-xs rounded-lg transition-all duration-300 font-body-md text-body-md" href="#">Beranda</a>
+<a class="text-primary-fixed font-bold border-b-2 border-primary-fixed pb-1 font-body-md text-body-md" href="#">Paket Umroh</a>
+<a class="text-on-secondary/80 font-medium hover:text-on-secondary hover:bg-on-secondary/10 px-sm py-xs rounded-lg transition-all duration-300 font-body-md text-body-md" href="#">Wisata Cairo</a>
+<a class="text-on-secondary/80 font-medium hover:text-on-secondary hover:bg-on-secondary/10 px-sm py-xs rounded-lg transition-all duration-300 font-body-md text-body-md" href="#">Handling</a>
+<a class="text-on-secondary/80 font-medium hover:text-on-secondary hover:bg-on-secondary/10 px-sm py-xs rounded-lg transition-all duration-300 font-body-md text-body-md" href="#">Visa</a>
+<a class="text-on-secondary/80 font-medium hover:text-on-secondary hover:bg-on-secondary/10 px-sm py-xs rounded-lg transition-all duration-300 font-body-md text-body-md" href="#">Tentang Kami</a>
+</nav>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-bold py-sm px-lg rounded-full transition-all duration-300 active:scale-95 shadow-lg font-body-md text-body-md">
+                Konsultasi Gratis
+            </button>
+</div>
+</header>
+<main>
+<!-- Hero Banner -->
+<section class="relative h-[716px] flex items-end pb-xl overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A majestic, wide-angle cinematic view of the Great Pyramids of Giza during a golden sunset. The sky is a gradient of deep orange and Nile blue. The lighting is soft yet dramatic, highlighting the texture of the ancient stones. In the foreground, a luxury desert caravan is subtly visible, embodying a premium editorial travel aesthetic with Cairo Turquoise accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCZWt6P2OFI-jEkR-BRJQYxzT_yi00gXBw3Blct-5l2rd6WulsHNRsUidsgWWu2nvfajBwWDOp0GaMgZNr14SALcQxFSF6pl4KQZUb6sXMvThCKLkIYo7li3I4-TkxFGMwYAuMIYWWh2norNeh8cWkzbnP5l4dhNzwyKwq7S9MZ2vZvCbraQ0oircNAgUqIK9UgdmhRHey-NyIiYGRIVn9-jatDRoQRDM23rOWhsUW8ivHpoRduf9D"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-desktop w-full max-w-container-max mx-auto text-on-secondary">
+<div class="inline-flex items-center gap-xs bg-primary-container/80 backdrop-blur-sm px-md py-xs rounded-full mb-md">
+<span class="material-symbols-outlined text-[18px] fill-icon">verified</span>
+<span class="text-label-md font-label-md uppercase tracking-widest">Premium Journey</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl mb-base max-w-3xl leading-tight">Umroh Plus Mesir &amp; Oasis Siwa</h1>
+<p class="font-body-lg text-body-lg text-on-secondary/90 max-w-2xl">Perpaduan spiritualitas ibadah Umroh dengan petualangan eksklusif menjelajahi keajaiban alam dan sejarah Mesir yang tersembunyi.</p>
+</div>
+</section>
+<!-- Destinasi Section -->
+<section class="py-xl bg-surface">
+<div class="px-margin-desktop w-full max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-lg gap-base">
+<div class="space-y-xs">
+<span class="text-primary font-bold tracking-widest text-label-md uppercase">Eksplorasi</span>
+<h2 class="font-headline-lg text-headline-lg text-secondary">Destinasi Pilihan</h2>
+</div>
+<p class="text-outline font-body-md max-w-md">Menelusuri jejak sejarah dan keindahan alam dari pesisir hingga oasis terdalam di jantung gurun Sahara.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Destinasi Cards -->
+<div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Breathtaking view of Pantai Ageba in Marsa Matruh, Egypt. The water is a crystal-clear Cairo Turquoise with white sandy cliffs. High-end editorial travel photography style, bright daylight, serene atmosphere, professional composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHXsUZYDMHC-h0dtQBG_bNP5LHFmoUa5ohMdog6ZILuK0QZ2fmYWq1IFEHQoofbQMl-Pp6Z_Sz1SH6pQo_bgLf8f3ilChRgZGitCjSdn_PfFAwOp4IczVfwiEICiVOHk8pkjKe894HNHpCR0OcNTq0KouscsrGaL71EG6aa0rUk91lieafKaZD7FaTYYPOFG99GZw_nTQAhfD64ORKqB5kVWmIbrjuGwDMRB2mQM4KL4TMwojPWHup"/>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md text-secondary mb-xs">Pantai Ageba</h3>
+<p class="text-on-surface-variant font-body-sm text-body-sm">Pesisir dengan air biru jernih dan tebing putih yang megah di Marsa Matruh.</p>
+</div>
+</div>
+<div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="The historical Hamam Cleopatra (Cleopatra's Bath) in Siwa Oasis. Ancient stone structure surrounded by turquoise natural spring water. Soft morning light, luxury historical travel vibe, desert surroundings with palm trees." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWsEKDY5xNiZbZM1870dMZFz-F6IF3IdfYYNd3En3g6H80qPj1eDYZZUzg1FyLL3Uk0ej9Sj_sDdB7TuCvxaFHLE-xIsyzKIA2IoJKzYrRXNR0FpMB6O-bGBpQ_3v5OW2MeBMF7c7jz_Ek4BQuda84I6Dz5CIpnEd0_X2sksSGoDau30X7EZkJpRYbRXVYl68GCfjYezPSZVx9LYxWlmIeXRq5tQvrqYXdoiIVCJTmcF816afTc0Iz"/>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md text-secondary mb-xs">Hamam Cleopatra</h3>
+<p class="text-on-surface-variant font-body-sm text-body-sm">Pemandian alami bersejarah yang dikelilingi legenda kecantikan Ratu Mesir.</p>
+</div>
+</div>
+<div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Fatnas Island in Siwa at sunset. Reflection of palm trees in the still salt lake water. Deep oranges and Nile blues in the sky. Calm, spiritual, and luxurious editorial travel shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChwz9RaB03gM5yMKIC7xQ1LGie766fw71BAQx-CT9G4HmGDXYeIZCnTG40zbOWUjsdHixFM7vDbNj8MJmi6HFg682izewm4pkWiTrufOZ74kdUzllxMvQ_3sVDB1omfgfNNtx7IZoIUT95zesqCsL-EfN4jvNJP2Hs2RyJSuzP5En4ww5haxY1QADt5LnDlJF50Ckv1O-FY9Zb0o9KohnabJUTv4ARVlt47hJPWuYdfCoz8tkhjXL4"/>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md text-secondary mb-xs">Fatnas Island</h3>
+<p class="text-on-surface-variant font-body-sm text-body-sm">Pulau di tengah danau garam, tempat terbaik menikmati sunset di Oasis Siwa.</p>
+</div>
+</div>
+<div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="The mesmerizing Salt Lakes of Siwa Oasis. Brilliant turquoise water surrounded by white salt crusts that look like snow. High contrast, vibrant colors, aerial perspective, luxury adventure style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd90Lf8v2wmt7rLqF5IdFGRBChWMxBbtNVB2VUurF7vG1LqUYnT2b_JoyLDnBgUQFywhRXUoVOhjZrRROadBWYnpBsulz1VjTE0WzkiApNupAiSjaOTjny0el5AI4JbVZHJtZZY5h7o4TZESJs44ThYdScJCEmjB3_C7y93-ppzBXkRNUO1MWjIkY-IM8mGJkTStSqKN0ljm0d9y_avt13euE9FXdsg5pmd18_I___cg3sMc1CEDwr"/>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md text-secondary mb-xs">Salt Lake</h3>
+<p class="text-on-surface-variant font-body-sm text-body-sm">Danau garam kristal dengan air berwarna turquoise pekat yang menakjubkan.</p>
+</div>
+</div>
+<div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Jabal Dakrour mountain in Egypt. Rugged desert peaks against a clear blue sky. Warm desert tones, professional photography, focus on geological textures and grand scale." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQHS2BYDwI_IjaRXwHNon7EGv8G0UPQLWCbgxJDymiDP3zzPfOY1tFJL9qF7XxhS4JAcU5JA-shB73ZJGI1w4Uzrn5eJbGP34zvF1oiuZ4nILxK6LCRcJHjlLLQj-zzHoBQ1PEqr05z7lWJJTZ48Di3G33eIhsR3R-qXZOAq03qsI3yDWxnxe_cOxhu5__du87ghPi_rBTtAuinCjnCWcFLsBOq-n-T6FENPqm1c76mSuIfpBpLPS8"/>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md text-secondary mb-xs">Jabal Dakrour</h3>
+<p class="text-on-surface-variant font-body-sm text-body-sm">Gunung yang dikenal dengan festival perdamaian dan pemandangan gurun yang luas.</p>
+</div>
+</div>
+<div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Uyun Cleopatra natural spring in the desert. Bubbling clear water in a circular stone pool surrounded by date palms. Bright sunny day, tropical oasis vibe, high-end travel photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNS_8G-VveRjsiniqeF1uojIaG4l4tsZDZYuhtLiuywr3cB2MBqw7H5CNXbRb-63gA3tIJPa-Qf4zCTGuS9EWGa1YmmperF9tohr6mBT2vWiTv2ZcfAO5UxWpyjw2-pyVoLiheTysgF_Yx9TxedtCePglbg_YQYGzEAsDI1W24icqYM17247LPTuzogP7Z83jTAu4mjwal1RM_58olg9iIfSvRHyJEwILNDaYo9Cn1FZq2i7bwGc1h"/>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md text-secondary mb-xs">Uyun Cleopatra</h3>
+<p class="text-on-surface-variant font-body-sm text-body-sm">Mata air jernih di tengah oasis yang menyegarkan jiwa dan raga.</p>
+</div>
+</div>
+<div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="The ancient mud-brick fortress of Shally in Siwa. Labyrinthine ruins standing against a deep blue sky. Golden hour lighting, high texture, historical atmosphere, premium editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1lKO0krbND1r4aTgDYC_cTdBjpk33pJVE-1sPOQbGpykx1yn3UFIjGLTyFwJ8CF5LQTKSGOf1zDOovXTh1pGEbRp1AI3WCzYzOzMqfXXccb27ALAf0tQaPBC64XIygSiB3tZ7jww1tNclGDWq3EndsX61Or7j4K5ytqJE51e2GcJfPNdcHeguRR-TzPn8w-KnVcGyQ4h_Y21xK57Fl7num_3rdS5MlwuCespPdr-_qt3Qn1SgVJX5"/>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md text-secondary mb-xs">Jabal Shally</h3>
+<p class="text-on-surface-variant font-body-sm text-body-sm">Benteng kota kuno dari abad ke-13 yang dibangun dari tanah liat dan garam.</p>
+</div>
+</div>
+<div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Jabal Mauta (Mountain of the Dead) in Egypt. Ancient rock-cut tombs on a hillside under a vast desert sky. Historical significance, soft desert lighting, professional archaeological photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLDrUoPg6onm9WChwqACxfxwStYiuUuhZsTdUu2_mWIszTHsnM89pZEq5BO_kydrBa2EOWSbBt2LHIgSRtdsmWnOq2BWkPLbik9VXvRI95KcLw9v0hXRRxX8N2-izNrBOGYgv0eXjCxoy3HnFUH_6AvPMcvlw0F9-fOPLGNM81mm14tYuczt1s0tVH4DPf2X1d4ZsokWcaJEq64xQT9_fi9EgcftBrZu1aYFncvHuT0_Kt4FI4l29H"/>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md text-secondary mb-xs">Jabal Mauta</h3>
+<p class="text-on-surface-variant font-body-sm text-body-sm">Situs pemakaman kuno dengan ribuan makam dari era Firaun hingga Romawi.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Details Section: Include & Exclude -->
+<section class="py-xl bg-surface-container-low"><div class="px-margin-desktop w-full max-w-container-max mx-auto"><div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-start"><div class="bg-white p-lg rounded-xl shadow-sm border-l-4 border-primary"><div class="flex items-center gap-base mb-lg"><span class="material-symbols-outlined text-primary text-[32px]">check_circle</span><h2 class="font-headline-lg text-headline-lg text-secondary">Fasilitas Termasuk (Include)</h2></div><ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-md">
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary">directions_bus</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Transportasi Bus</span>
+<p class="text-body-sm text-outline">Layanan transportasi bus standar internasional.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary">hotel</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Hotel 2 Malam di Siwa</span>
+<p class="text-body-sm text-outline">Akomodasi penginapan nyaman di jantung Oasis Siwa.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary">restaurant</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Makan &amp; Minum (6x)</span>
+<p class="text-body-sm text-outline">Sajian menu lokal dan internasional berkualitas.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary">local_cafe</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Snack &amp; Minum (2x)</span>
+<p class="text-body-sm text-outline">Camilan dan minuman penyegar selama perjalanan.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary">support_agent</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Professional Tour Guide</span>
+<p class="text-body-sm text-outline">Pemandu berpengalaman yang menguasai sejarah lokal.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary">photo_camera</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Fotografer Dokumentasi</span>
+<p class="text-body-sm text-outline">Layanan dokumentasi profesional untuk momen berharga Anda.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Izin Kepolisian (Permit)</span>
+<p class="text-body-sm text-outline">Pengurusan seluruh perizinan perjalanan di wilayah Mesir.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary">confirmation_number</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Tiket Pantai Ageba &amp; Jabal Mauta</span>
+<p class="text-body-sm text-outline">Akses masuk ke destinasi wisata pilihan.</p>
+</div>
+</li>
+</ul></div><div class="bg-white p-lg rounded-xl shadow-sm border-l-4 border-error"><div class="flex items-center gap-base mb-lg"><span class="material-symbols-outlined text-error text-[32px]">cancel</span><h2 class="font-headline-lg text-headline-lg text-secondary">Tidak Termasuk (Exclude)</h2></div><ul class="space-y-md"><li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-error">directions_car</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Safari Off-road 4x4</span>
+<p class="text-body-sm text-outline">Kegiatan petualangan gurun menggunakan kendaraan khusus.</p>
+</div>
+</li></ul><div class="mt-lg p-md bg-surface-container rounded-xl border border-dashed border-outline"><p class="font-body-sm text-body-sm text-outline">Catatan: Untuk kegiatan Safari Off-road, tamu dapat melakukan upgrade di lokasi atau melalui koordinasi dengan tour guide kami.</p></div></div></div></div></section>
+<!-- Bottom Actions -->
+<section class="py-lg border-t border-outline-variant/30 bg-white sticky bottom-0 z-40 shadow-[0_-10px_30px_rgba(0,0,0,0.05)]">
+<div class="px-margin-desktop w-full max-w-container-max mx-auto flex flex-col md:flex-row items-center justify-between gap-md">
+<div>
+<span class="text-label-md font-label-md text-outline uppercase tracking-wider">Mulai Dari</span>
+<div class="flex items-baseline gap-xs">
+<span class="text-secondary font-bold text-headline-lg font-headline-lg">Rp 24.500.000</span>
+<span class="text-outline font-body-sm">/pax</span>
+</div>
+</div>
+<div class="flex gap-md w-full md:w-auto">
+<button class="flex-1 md:flex-none border-2 border-secondary text-secondary hover:bg-secondary hover:text-white font-bold py-sm px-xl rounded-full transition-all duration-300 font-body-md text-body-md flex items-center justify-center gap-base">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+                        Kembali ke Paket
+                    </button>
+<button class="flex-1 md:flex-none bg-primary hover:bg-primary-container text-on-primary font-bold py-sm px-xl rounded-full transition-all duration-300 active:scale-95 shadow-xl font-body-md text-body-md flex items-center justify-center gap-base">
+<span class="material-symbols-outlined text-[20px] fill-icon">shopping_cart</span>
+                        Pesan Sekarang
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary dark:bg-inverse-surface full-width border-t border-primary/30">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto py-xl">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-sm text-headline-sm text-on-secondary mb-md italic font-bold">Pesona Cairo</div>
+<p class="text-on-secondary/70 font-body-sm text-body-sm mb-lg">Menyediakan pengalaman Umroh dan wisata religi premium dengan pelayanan terbaik dan profesional sejak 2018.</p>
+</div>
+<div class="space-y-sm">
+<h4 class="text-primary-fixed font-bold uppercase tracking-widest text-label-md">Menu Cepat</h4>
+<nav class="flex flex-col gap-xs">
+<a class="text-on-secondary/70 hover:text-on-secondary transition-colors text-body-sm" href="#">Beranda</a>
+<a class="text-on-secondary/70 hover:text-on-secondary transition-colors text-body-sm" href="#">Paket Umroh</a>
+<a class="text-on-secondary/70 hover:text-on-secondary transition-colors text-body-sm" href="#">Galeri</a>
+<a class="text-on-secondary/70 hover:text-on-secondary transition-colors text-body-sm" href="#">Kontak</a>
+</nav>
+</div>
+<div class="space-y-sm">
+<h4 class="text-primary-fixed font-bold uppercase tracking-widest text-label-md">Legalitas</h4>
+<nav class="flex flex-col gap-xs">
+<a class="text-on-secondary/70 hover:text-on-secondary transition-colors text-body-sm" href="#">Syarat &amp; Ketentuan</a>
+<a class="text-on-secondary/70 hover:text-on-secondary transition-colors text-body-sm" href="#">Kebijakan Privasi</a>
+</nav>
+</div>
+<div class="space-y-sm">
+<h4 class="text-primary-fixed font-bold uppercase tracking-widest text-label-md">Hubungi Kami</h4>
+<div class="flex flex-col gap-xs">
+<p class="text-on-secondary/70 text-body-sm">Jl. Boulevard Mesir No. 12, Cairo.</p>
+<p class="text-on-secondary/70 text-body-sm">info@pesonacairo.com</p>
+<p class="text-on-secondary/70 text-body-sm">+62 812 3456 7890</p>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop py-md border-t border-on-secondary/10 w-full max-w-container-max mx-auto text-center">
+<p class="text-on-secondary/50 text-label-md font-label-md">© 2024 Pesona Cairo. Terdaftar Kemenag RI / PPIU No. 123456.</p>
+</div>
+</footer>
+<script>
+        // Simple interaction for buttons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                button.classList.add('scale-95');
+            });
+            button.addEventListener('mouseup', () => {
+                button.classList.remove('scale-95');
+            });
+            button.addEventListener('mouseleave', () => {
+                button.classList.remove('scale-95');
+            });
+        });
+
+        // Sticky header background shift on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md', 'h-16');
+                header.classList.remove('h-20');
+            } else {
+                header.classList.remove('shadow-md', 'h-16');
+                header.classList.add('h-20');
+            }
+        });
+    </script>
+</body></html>
