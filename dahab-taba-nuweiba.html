@@ -122,31 +122,68 @@
     </style>
 </head>
 <body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
-<!-- Top Navigation -->
-<header class="bg-secondary/90 backdrop-blur-md sticky top-0 border-b border-outline-variant/20 shadow-sm z-50 transition-all duration-300 h-20">
-<div class="flex justify-between items-center px-margin-desktop w-full max-w-[1440px] mx-auto h-20">
-<div class="font-headline-md text-headline-md font-bold text-on-secondary italic tracking-tighter">Pesona Cairo</div>
-<nav class="hidden md:flex gap-lg items-center">
-<a class="text-on-secondary/80 font-medium hover:text-on-secondary hover:bg-on-secondary/10 px-sm py-xs rounded-lg transition-all duration-300 font-body-md text-body-md" href="#">Beranda</a>
-<a class="text-primary-fixed font-bold border-b-2 border-primary-fixed pb-1 font-body-md text-body-md" href="#">Paket Umroh</a>
-<a class="text-on-secondary/80 font-medium hover:text-on-secondary hover:bg-on-secondary/10 px-sm py-xs rounded-lg transition-all duration-300 font-body-md text-body-md" href="#">Wisata Cairo</a>
-<a class="text-on-secondary/80 font-medium hover:text-on-secondary hover:bg-on-secondary/10 px-sm py-xs rounded-lg transition-all duration-300 font-body-md text-body-md" href="#">Handling</a>
-<a class="text-on-secondary/80 font-medium hover:text-on-secondary hover:bg-on-secondary/10 px-sm py-xs rounded-lg transition-all duration-300 font-body-md text-body-md" href="#">Visa</a>
-<a class="text-on-secondary/80 font-medium hover:text-on-secondary hover:bg-on-secondary/10 px-sm py-xs rounded-lg transition-all duration-300 font-body-md text-body-md" href="#">Tentang Kami</a>
-</nav>
-<button class="bg-primary hover:bg-primary-container text-on-primary font-bold py-sm px-lg rounded-full transition-all duration-300 active:scale-95 shadow-lg font-body-md text-body-md">
+<!-- TopNavBar -->
+<nav class="bg-secondary/95 backdrop-blur-md sticky top-0 z-50 border-b border-white/10 shadow-sm">
+
+    <div class="max-w-7xl mx-auto px-4 md:px-margin-desktop h-20 flex items-center justify-between">
+
+        <!-- Logo -->
+        <div class="font-headline-md text-headline-md font-bold italic text-on-secondary">
+            Pesona Cairo
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="index.html">Beranda</a>
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="wisata-cairo.html">Wisata Cairo</a>
+            <a class="text-primary-fixed font-bold border-b-2 border-primary-fixed pb-1" href="paket-umroh.html">Paket Trip Cairo</a>
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="handling.html">Handling</a>
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="tentang-kami.html">Tentang Kami</a>
+        </div>
+
+        <!-- Desktop Button -->
+        <a class="hidden md:block btn bg-primary-container text-on-primary-container px-6 py-2.5 font-bold rounded-lg hover:bg-primary-fixed transition-all active:scale-95 duration-200"
+           href="https://wa.me/201127847321">
             Konsultasi Gratis
+        </a>
+
+        <!-- Mobile Hamburger -->
+        <button id="menuBtn" class="md:hidden text-white text-3xl">
+            &#9776;
         </button>
-</div>
-</header>
-<main>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-secondary border-t border-white/10">
+
+        <div class="flex flex-col p-4 space-y-4">
+
+            <a href="index.html">Beranda</a>
+            <a href="wisata-cairo.html">Wisata Cairo</a>
+            <a href="paket-umroh.html">Paket Trip Cairo</a>
+            <a href="handling.html">Handling</a>
+            <a href="tentang-kami.html">Tentang Kami</a>
+
+            <!-- Mobile Konsultasi -->
+            <a class="btn bg-primary-container text-on-primary-container px-6 py-3 rounded-lg text-center font-bold"
+               href="https://wa.me/201127847321">
+                Konsultasi Gratis
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+<main class="relative overflow-hidden">
 <!-- Hero Banner -->
-<section class="relative h-[716px] flex items-end pb-xl overflow-hidden">
+<section class="relative h-[90vh] overflow-hidden">
 <div class="absolute inset-0 z-0">
 <div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCxgzxxUJ30YqTIFyVBseuGYj8o3JnqMeC05Eq4Urx6KXRNXIf1_wGGnxUSKSEfw3N6IOJyyk3X7agBJnCdPArJln2sd9H2jEJA1QxHk_zb9tzzhHfLR8dPXlqa4rjq_4chKEphND1DY7Omp2AithE9Hojo9J_1QdFNgTZGWJxARUS4xVF-peuJxQbjyLqxvTL6rmvcKeMmfLFucoRxSv8XX2MW9jyWtlEcNGdge6rZ1kc6v0AZnfeW')"></div>
 <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent"></div>
 </div>
-<div class="relative z-10 px-margin-desktop w-full max-w-[1440px] mx-auto text-on-secondary">
+<div class="relative z-10 px-margin-desktop max-w-7xl mx-auto w-full pt-32">
 <div class="inline-flex items-center gap-xs bg-primary-container/80 backdrop-blur-sm px-md py-xs rounded-full mb-md">
 <span class="material-symbols-outlined text-[18px] fill-icon">verified</span>
 <span class="text-label-md font-label-md uppercase tracking-widest">Premium Journey</span>
