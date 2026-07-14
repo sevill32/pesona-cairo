@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hurghada - Pesona Cairo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#7ab0fe",
+                        "on-secondary-container": "#00427e",
+                        "secondary-fixed-dim": "#a6c8ff",
+                        "on-error": "#ffffff",
+                        "secondary": "#1e5fa8",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface": "#f8f9fa",
+                        "on-background": "#191c1d",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#bcc9cc",
+                        "surface-variant": "#e1e3e4",
+                        "primary-fixed": "#a2eeff",
+                        "on-primary-container": "#003d46",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#004787",
+                        "on-surface": "#191c1d",
+                        "surface-dim": "#d9dadb",
+                        "surface-container": "#edeeef",
+                        "outline": "#6d797c",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#755a1a",
+                        "tertiary-fixed-dim": "#e6c277",
+                        "tertiary-fixed": "#ffdf9f",
+                        "on-surface-variant": "#3d494c",
+                        "tertiary-container": "#bc9b55",
+                        "inverse-primary": "#56d7ef",
+                        "inverse-surface": "#2e3132",
+                        "on-error-container": "#93000a",
+                        "background": "#f8f9fa",
+                        "on-secondary-fixed": "#001c3b",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-tertiary-fixed-variant": "#5b4302",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#473300",
+                        "surface-tint": "#006877",
+                        "secondary-fixed": "#d5e3ff",
+                        "primary-fixed-dim": "#56d7ef",
+                        "on-tertiary-fixed": "#261a00",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#f8f9fa",
+                        "on-primary-fixed": "#001f25",
+                        "on-primary-fixed-variant": "#004e5a",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#f3f4f5",
+                        "surface-container-high": "#e7e8e9",
+                        "primary-container": "#12afc6",
+                        "primary": "#006877"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "xs": "4px",
+                        "gutter": "24px",
+                        "xl": "80px",
+                        "sm": "12px",
+                        "lg": "48px",
+                        "base": "8px",
+                        "md": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Playfair Display"],
+                        "body-sm": ["Hanken Grotesk"],
+                        "headline-lg": ["Playfair Display"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-md": ["Hanken Grotesk"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #006877; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="bg-secondary/95 backdrop-blur-md sticky top-0 z-50 border-b border-white/10 shadow-sm">
+
+    <div class="max-w-7xl mx-auto px-4 md:px-margin-desktop h-20 flex items-center justify-between">
+
+        <!-- Logo -->
+        <div class="font-headline-md text-headline-md font-bold italic text-on-secondary">
+            Pesona Cairo
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="index.html">Beranda</a>
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="wisata-cairo.html">Wisata Cairo</a>
+            <a class="text-primary-fixed font-bold border-b-2 border-primary-fixed pb-1" href="paket-umroh.html">Paket Trip Cairo</a>
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="handling.html">Handling</a>
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="tentang-kami.html">Tentang Kami</a>
+        </div>
+
+        <!-- Desktop Button -->
+        <a class="hidden md:block btn bg-primary-container text-on-primary-container px-6 py-2.5 font-bold rounded-lg hover:bg-primary-fixed transition-all active:scale-95 duration-200"
+           href="https://wa.me/201127847321">
+            Konsultasi Gratis
+        </a>
+
+        <!-- Mobile Hamburger -->
+        <button id="menuBtn" class="md:hidden text-white text-3xl">
+            &#9776;
+        </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-secondary border-t border-white/10">
+
+        <div class="flex flex-col p-4 space-y-4">
+
+            <a href="index.html">Beranda</a>
+            <a href="wisata-cairo.html">Wisata Cairo</a>
+            <a href="paket-umroh.html">Paket Trip Cairo</a>
+            <a href="handling.html">Handling</a>
+            <a href="tentang-kami.html">Tentang Kami</a>
+
+            <!-- Mobile Konsultasi -->
+            <a class="btn bg-primary-container text-on-primary-container px-6 py-3 rounded-lg text-center font-bold"
+               href="https://wa.me/201127847321">
+                Konsultasi Gratis
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+<main class="relative overflow-hidden">
+<!-- Hero Section -->
+<section class="relative h-[90vh] overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Hurghada panoramic sunset view" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLs5VGwc1nj0QSSHMaR4M4_UH3M1pBK8T74enX2ZBvMjaZ3HN462R2SFdwrty9x9HYsZrOxvLQ8cgpL3uofglEB827QrWETg6FsJdYPkeK6PrElei7edD5Qt-LHOqvPkX3jaZiJn84lDeyq7BXaBxngeVZZCvPRf75t1MTkYl6TwyCbTaEVbfDTaToYGywIF5_KH1oYkH-Bn7GAhvIBrgw94XzHOMDGiMVTdJypZYifp9QCI72v7R9uY9Z0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-desktop max-w-7xl mx-auto w-full pt-32 text-on-secondary">
+<div class="inline-flex items-center gap-xs bg-primary-container/80 backdrop-blur-sm px-md py-xs rounded-full mb-md">
+<span class="material-symbols-outlined text-[18px] fill-icon">verified</span>
+<span class="text-label-md font-label-md uppercase tracking-widest">Eksklusif Package</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl mb-base max-w-3xl leading-tight">Hurghada</h1>
+<p class="font-body-lg text-body-lg text-on-secondary/90 max-w-2xl">
+                Enjoy the beauty of Hurghada with relaxing beaches and unforgettable Red Sea scenery. Nikmati pengalaman wisata bahari kelas dunia di jantung Mesir.
+            </p>
+</div>
+</section>
+<!-- Destinasi Section -->
+<section class="py-xl bg-surface">
+<div class="px-margin-desktop w-full max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-lg gap-base">
+<div class="space-y-xs">
+<span class="text-primary font-bold tracking-widest text-label-md uppercase">Eksplorasi</span>
+<h2 class="font-headline-lg text-headline-lg text-secondary">Destinasi Pilihan</h2>
+</div>
+<p class="text-outline font-body-md max-w-md text-right md:text-left">Koleksi lokasi eksklusif dalam rute perjalanan Anda, menelusuri keindahan pesisir Laut Merah.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Masjid Al Amin -->
+<div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
+<div class="relative h-48 overflow-hidden">
+<img alt="Masjid Al Amin Hurghada" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeVP0faDszlSdH1X8ltgi4bE1q5fvx6Woa_5KWq1eJRl8jWcqXioiwmIV69RQfojVEX8uocEM6kEdUZ4aY9ANW3iLP4eKuF5Tdu7bKFwuiY5l_cX1bky6RvFRj6yvEUBaQEoEAb-Y-exzLPYl_MADBan1d2X7BepwNP5-_LpOzq050clQQtfkOn9IMKmNYNeEWQVBt7SLXqCpKBen0QvZJVfvPRAYo_zY0p-Wv8cLtv7xiYx4qODIM"/>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md text-secondary mb-xs">Masjid Al Amin</h3>
+<p class="text-on-surface-variant font-body-sm text-body-sm">Ikon arsitektur Islam yang megah di pusat kota Hurghada.</p>
+</div>
+</div>
+<!-- Pantai Hurghada -->
+<div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
+<div class="relative h-48 overflow-hidden">
+<img alt="Pantai Hurghada" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNKNRrBIiSCcg_v5BrYT1f3m4Gnj46mYBpotWaqvG9ZxRyYIYkoFttd_na1ILrnEuloOXilRHs4tP-g-QbZBhIhlfOXmmXkIUCTjoV1VcGrwJGKnU9oVLNrXwSW27AzwZPNlq89DcOnw4umYXwDGPf8d-Vk19veFMLoD0g72g-B5eaqD7snBa_83xmEhpkoNcws03t3yWAEBElQvxmHoafoPHZyJqEoZEpfL5RxTUWuMr2OryCUScS"/>
+</div>
+<div class="p-md">
+<h3 class="font-headline-md text-headline-md text-secondary mb-xs">Pantai Hurghada</h3>
+<p class="text-on-surface-variant font-body-sm text-body-sm">Perairan kristal Laut Merah dengan pasir putih yang menawan.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Details Section: Include & Exclude -->
+<section class="py-xl bg-surface-container-low">
+<div class="px-margin-desktop w-full max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-start">
+<!-- Fasilitas Termasuk (Include) -->
+<div class="bg-white p-lg rounded-xl shadow-sm border-l-4 border-primary-container">
+<div class="flex items-center gap-base mb-lg">
+<span class="material-symbols-outlined text-primary-container text-[32px] fill-icon">check_circle</span>
+<h2 class="font-headline-lg text-headline-lg text-secondary">Fasilitas Termasuk (Include)</h2>
+</div>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-y-md gap-x-gutter">
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary-container">directions_bus</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Transportasi</span>
+<p class="text-body-sm text-outline">Layanan transportasi bus nyaman selama perjalanan.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary-container">bed</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Hotel 2 malam</span>
+<p class="text-body-sm text-outline">Akomodasi penginapan premium di tepi pantai.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary-container">restaurant</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Makan 6x</span>
+<p class="text-body-sm text-outline">Sajian menu harian yang berkualitas.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary-container">coffee</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Snack 2x</span>
+<p class="text-body-sm text-outline">Camilan penyegar di sela perjalanan.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary-container">person</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Tour guide</span>
+<p class="text-body-sm text-outline">Pemandu lokal profesional berpengalaman.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary-container">photo_camera</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Fotografer</span>
+<p class="text-body-sm text-outline">Dokumentasi profesional selama perjalanan.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-primary-container">shield</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Surat izin polisi</span>
+<p class="text-body-sm text-outline">Pengurusan dokumen perjalanan legal dan aman.</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Tidak Termasuk (Exclude) -->
+<div class="bg-white p-lg rounded-xl shadow-sm border-l-4 border-error/50">
+<div class="flex items-center gap-base mb-lg">
+<span class="material-symbols-outlined text-error/70 text-[32px] fill-icon">cancel</span>
+<h2 class="font-headline-lg text-headline-lg text-secondary">Tidak Termasuk (Exclude)</h2>
+</div>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-y-md gap-x-gutter">
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-error/60">beach_access</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Hula hula island</span>
+<p class="text-body-sm text-outline">Aktivitas penyeberangan pulau opsional.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-error/60">mountain_flag</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">ATV premium</span>
+<p class="text-body-sm text-outline">Petualangan padang pasir dengan ATV.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-error/60">scuba_diving</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Snorkeling</span>
+<p class="text-body-sm text-outline">Kegiatan bawah laut opsional.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-error/60">directions_boat</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Glassboat</span>
+<p class="text-body-sm text-outline">Tur kapal kaca untuk melihat terumbu karang.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-error/60">waves</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Banana/sofa boat</span>
+<p class="text-body-sm text-outline">Aktivitas air seru di pantai.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-error/60">paragliding</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Parasailing</span>
+<p class="text-body-sm text-outline">Olahraga udara di tepi laut.</p>
+</div>
+</li>
+<li class="flex items-start gap-md">
+<span class="material-symbols-outlined text-error/60">landscape</span>
+<div class="flex flex-col">
+<span class="font-bold text-secondary">Pantai</span>
+<p class="text-body-sm text-outline">Akses pantai berbayar tambahan di luar akomodasi.</p>
+</div>
+</li>
+</ul>
+<div class="mt-lg p-md bg-surface-container rounded-xl border border-dashed border-outline">
+<p class="font-body-sm text-body-sm text-outline italic">Catatan: Aktivitas opsional dapat dipesan melalui tour guide di lokasi dengan harga khusus grup.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Actions -->
+<section class="py-lg border-t border-outline-variant/30 bg-white sticky bottom-0 z-40 shadow-[0_-10px_30px_rgba(0,0,0,0.05)]">
+<div class="px-margin-desktop w-full max-w-[1440px] mx-auto flex flex-col md:flex-row items-center justify-between gap-md">
+<div>
+<span class="text-label-md font-label-md text-outline uppercase tracking-wider">Harga Mulai Dari</span>
+<div class="flex items-baseline gap-xs">
+<span class="text-secondary font-bold text-headline-lg font-headline-lg">$249</span>
+<span class="text-outline font-body-sm">/ pax</span>
+</div>
+</div>
+<div class="flex gap-md w-full md:w-auto">
+<button class="flex-1 md:flex-none border-2 border-secondary text-secondary hover:bg-secondary hover:text-white font-bold py-sm px-xl rounded-full transition-all duration-300 font-body-md text-body-md flex items-center justify-center gap-base">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+                    Kembali ke Paket
+                </button>
+<button class="flex-1 md:flex-none bg-primary hover:bg-primary-container text-on-primary font-bold py-sm px-xl rounded-full transition-all duration-300 active:scale-95 shadow-xl font-body-md text-body-md flex items-center justify-center gap-base">
+<span class="material-symbols-outlined text-[20px] fill-icon">calendar_month</span>
+                    Pesan Sekarang
+                </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary dark:bg-inverse-surface border-t border-primary/30">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-12 max-w-[1440px] mx-auto">
+<div class="md:col-span-1">
+<div class="font-headline-sm text-headline-sm text-on-secondary mb-md italic font-bold">Pesona Cairo</div>
+<p class="text-on-secondary/70 text-body-sm mb-lg max-w-xs">
+                Penyelenggara perjalanan Umroh dan wisata Mesir terpercaya dengan standar pelayanan premium sejak 2018.
+            </p>
+</div>
+<div>
+<h5 class="text-primary-fixed font-bold uppercase tracking-widest text-label-md mb-md">Menu Cepat</h5>
+<ul class="space-y-sm">
+<li><a class="text-on-secondary/70 hover:text-on-secondary transition-colors text-body-sm" href="#">Beranda</a></li>
+<li><a class="text-on-secondary/70 hover:text-on-secondary transition-colors text-body-sm" href="#">Paket Umroh</a></li>
+<li><a class="text-on-secondary/70 hover:text-on-secondary transition-colors text-body-sm" href="#">Galeri</a></li>
+<li><a class="text-on-secondary/70 hover:text-on-secondary transition-colors text-body-sm" href="#">Kontak</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-primary-fixed font-bold uppercase tracking-widest text-label-md mb-md">Legalitas</h5>
+<ul class="space-y-sm">
+<li><a class="text-on-secondary/70 hover:text-on-secondary transition-colors text-body-sm" href="#">Syarat &amp; Ketentuan</a></li>
+<li><a class="text-on-secondary/70 hover:text-on-secondary transition-colors text-body-sm" href="#">Kebijakan Privasi</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-primary-fixed font-bold uppercase tracking-widest text-label-md mb-md">Hubungi Kami</h5>
+<div class="flex flex-col gap-xs text-on-secondary/70 text-body-sm">
+<p>Jl. Boulevard Mesir No. 12, Cairo.</p>
+<p>info@pesonacairo.com</p>
+<p>+62 812 3456 7890</p>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop py-base border-t border-on-secondary/10 max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center text-center">
+<p class="text-on-secondary/50 text-label-md">© 2024 Pesona Cairo. Terdaftar Kemenag RI / PPIU No. 123456.</p>
+</div>
+</footer>
+<script>
+    // Header interaction
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.classList.add('shadow-md', 'h-16');
+            header.classList.remove('h-20');
+        } else {
+            header.classList.remove('shadow-md', 'h-16');
+            header.classList.add('h-20');
+        }
+    });
+
+    // Button active state simulation
+    document.querySelectorAll('button').forEach(button => {
+        button.addEventListener('mousedown', () => button.classList.add('scale-95'));
+        button.addEventListener('mouseup', () => button.classList.remove('scale-95'));
+        button.addEventListener('mouseleave', () => button.classList.remove('scale-95'));
+    });
+</script>
+</body></html>
