@@ -99,63 +99,62 @@
         </div>
 
         <!-- Kategori -->
-        <div class="mb-8">
-            <h3 class="font-label-md text-primary mb-4 uppercase">
-                Kategori Perjalanan
-            </h3>
+        <div class="space-y-3" id="categoryFilter">
 
-            <div class="space-y-3">
+    <label class="flex items-center gap-3 cursor-pointer group">
+        <input
+            type="checkbox"
+            class="category-checkbox rounded text-primary focus:ring-primary"
+            value="pantai">
+        <span class="group-hover:text-primary transition">
+            Pantai & Laut Merah
+        </span>
+    </label>
 
-                <label class="flex items-center gap-3 cursor-pointer group">
-                    <input type="checkbox" class="rounded text-primary focus:ring-primary">
-                    <span class="group-hover:text-primary transition">
-                        Pantai & Laut Merah
-                    </span>
-                </label>
+    <label class="flex items-center gap-3 cursor-pointer group">
+        <input
+            type="checkbox"
+            class="category-checkbox rounded text-primary focus:ring-primary"
+            value="gurun">
+        <span class="group-hover:text-primary transition">
+            Gurun & Oasis
+        </span>
+    </label>
 
-                <label class="flex items-center gap-3 cursor-pointer group">
-                    <input type="checkbox" class="rounded text-primary focus:ring-primary">
-                    <span class="group-hover:text-primary transition">
-                        Gurun & Oasis
-                    </span>
-                </label>
+    <label class="flex items-center gap-3 cursor-pointer group">
+        <input
+            type="checkbox"
+            class="category-checkbox rounded text-primary focus:ring-primary"
+            value="sejarah">
+        <span class="group-hover:text-primary transition">
+            Sejarah & Budaya
+        </span>
+    </label>
 
-                <label class="flex items-center gap-3 cursor-pointer group">
-                    <input type="checkbox" class="rounded text-primary focus:ring-primary">
-                    <span class="group-hover:text-primary transition">
-                        Sejarah & Budaya
-                    </span>
-                </label>
+    <label class="flex items-center gap-3 cursor-pointer group">
+        <input
+            type="checkbox"
+            class="category-checkbox rounded text-primary focus:ring-primary"
+            value="sinai">
+        <span class="group-hover:text-primary transition">
+            Pegunungan & Sinai
+        </span>
+    </label>
 
-                <label class="flex items-center gap-3 cursor-pointer group">
-                    <input type="checkbox" class="rounded text-primary focus:ring-primary">
-                    <span class="group-hover:text-primary transition">
-                        Religi & Spiritual
-                    </span>
-                </label>
-
-                <label class="flex items-center gap-3 cursor-pointer group">
-                    <input type="checkbox" class="rounded text-primary focus:ring-primary">
-                    <span class="group-hover:text-primary transition">
-                        Pegunungan & Sinai
-                    </span>
-                </label>
-
-            </div>
-        </div>
-
+</div>
         <!-- Durasi -->
         <div class="mb-8">
             <h3 class="font-label-md text-primary mb-4 uppercase">
                 Durasi
             </h3>
 
-            <select class="w-full bg-surface-container border-b border-primary py-2 focus:ring-0">
-                <option>Semua Durasi</option>
-                <option>2 Hari 1 Malam</option>
-                <option>3 Hari 2 Malam</option>
-                <option>4 Hari 3 Malam</option>
-            </select>
+           <select
+                id="durationFilter"
+                class="w-full bg-surface-container border-b border-primary py-2 focus:ring-0">
+                <option value="all">Semua Durasi</option>
+                <option value="2">2 Hari 1 Malam</option>
+                <option value="3">3 Hari 2 Malam</option>
+</select>
         </div>
 
         <!-- Destinasi -->
@@ -164,14 +163,17 @@
                 Destinasi Utama
             </h3>
 
-            <select class="w-full bg-surface-container border-b border-primary py-2 focus:ring-0">
-                <option>Semua Destinasi</option>
-                <option>Laut Merah</option>
-                <option>Sinai</option>
-                <option>Bahariya Oasis</option>
-                <option>Matruh</option>
-                <option>Hurghada</option>
-            </select>
+<select
+                id="locationFilter"
+                class="w-full bg-surface-container border-b border-primary py-2 focus:ring-0">
+                <option value="all">Semua Destinasi</option>
+                <option value="matruh">Matruh</option>
+                <option value="laut-merah">Laut Merah</option>
+                <option value="hurghada">Hurghada</option>
+                <option value="sharm">Sharm El Sheikh</option>
+                <option value="bahariya">Bahariya</option>
+                <option value="sinai">Sinai</option>
+</select>
         </div>
 
         <!-- Harga -->
@@ -181,35 +183,58 @@
             </h3>
 
             <input
-                type="range"
-                class="w-full accent-primary"
-                min="3200"
-                max="4000">
+    id="priceFilter"
+    type="range"
+    class="w-full accent-primary"
+    min="3200"
+    max="4000"
+    value="4000"
+    step="50">
 
-            <div class="flex justify-between text-xs text-on-surface-variant mt-2">
-                <span>3.200</span>
-                <span>4.000+</span>
-            </div>
-        </div>
+<div class="flex justify-between mt-2">
+
+    <span class="text-xs text-on-surface-variant">
+        3.200
+    </span>
+
+    <span
+        id="priceValue"
+        class="text-xs font-semibold text-primary">
+
+        4.000
+    </span>
+</div>
+</div>
 
         <!-- Buttons -->
         <div class="flex gap-3">
 
-            <button class="flex-1 py-3 border border-primary text-primary rounded-lg hover:bg-primary/10 transition">
-                Reset
-            </button>
+    <button
+        id="resetFilter"
+        class="flex-1 py-3 border border-primary text-primary rounded-lg hover:bg-primary/10 transition">
 
-            <button class="flex-1 py-3 bg-secondary text-on-secondary rounded-lg hover:bg-on-secondary-fixed-variant transition">
-                Terapkan
-            </button>
-        </div>
+        Reset
+
+    </button>
+
+    <button
+        id="applyFilter"
+        class="flex-1 py-3 bg-secondary text-on-secondary rounded-lg hover:bg-on-secondary-fixed-variant transition">
+
+        Terapkan
+    </button>
+</div>
     </div>
 </aside>
 <!-- Grid Packages -->
 <div class="lg:col-span-9">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
 <!-- Package Card 1: Plus Mesir (Highlighted) -->
-<div class="bg-surface-container-lowest border border-outline-variant shadow-sm overflow-hidden group rounded-xl">
+<div class="package-card bg-surface-container-lowest border border-outline-variant shadow-sm overflow-hidden group rounded-xl"
+     data-category="gurun"
+     data-location="matruh"
+     data-duration="3"
+     data-price="3200">
 <div class="relative h-64 overflow-hidden">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A cinematic low-angle photograph of the majestic Great Pyramids of Giza under a golden hour Saharan sun. The sky is a gradient of deep amber and soft violet, creating a serene and timeless spiritual atmosphere. The textures of the ancient stones are highlighted by the warm, directional light, embodying a sense of sacred elegance and luxury heritage travel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKbIXT0oKWOx_uT_g0b_G5WDzqnez3FBDrfuohaU1ut0bIea8CVVxLZW061vdrZ7K578bcpcB7hvPcv066ubXZsBeyOQm_L0OAMNe8scLxkQ0idkTTE5m1jVsd5y0SDj7lwBzg5KalpK3iQn4ALtwgeFLM-hyHzzN6ox79RXHcU6vp977nV64Uay55UgWbV5r2a7KP6OBg0tfzcR-RKs82nnD3L-nz4dQsKsMJcw1NAYUseofgFOoUouq5jWUXxjFPJyfIjuQIXzQ"/>
 </div>
@@ -253,7 +278,11 @@
 </div>
 </div>
 <!-- Package Card 2: Reguler -->
-<div class="bg-surface-container-lowest border border-outline-variant shadow-sm overflow-hidden group rounded-xl">
+<div class="package-card bg-surface-container-lowest border border-outline-variant shadow-sm overflow-hidden group rounded-xl"
+     data-category="pantai"
+     data-location="laut-merah"
+     data-duration="3"
+     data-price="3500">
 <div class="relative h-64 overflow-hidden">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A serene wide shot of the Masjid al-Haram at night, with the Kaaba in the center surrounded by worshippers in white ihram. The lighting is ethereal, with cool moonlight contrasting against the warm glow of the mosque's interior lights. The architectural details of the minarets are sharp and elegant, conveying a sense of profound peace and devotion." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBILz_8LhNDppK84m7GzfEAuWQr4yXfJ18ChPbv6aVSHy2L3FK_h6PbuOB0qIMRk5y-uuqKcz0Q-5wyWf_GNKFuL9ih7R8wBRjCbnHF7uRh1adVn0XwC4RYxmN9jIIZoky5xH2D0H9dp1DzioD3R8ueNgnGoxe7RZv9si3YXxlkQcGOhrYpg2JeSr1eVnfwEHazKnlIBbc2A-dIz6euq5DWk2n-AJhGVoxNyJGwYf_frKpNhwdrIUgcL7ECc5HFLdZELNQTD_QMS4U"/>
 </div>
@@ -297,7 +326,11 @@
 </div>
 </div>
 <!-- Package Card 3: VIP -->
-<div class="bg-surface-container-lowest border border-outline-variant shadow-sm overflow-hidden group rounded-xl">
+<div class="package-card bg-surface-container-lowest border border-outline-variant shadow-sm overflow-hidden group rounded-xl"
+     data-category="sinai"
+     data-location="sinai"
+     data-duration="3"
+     data-price="3600">
 <div class="relative h-64 overflow-hidden">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="An opulent hotel suite overlooking the Masjid al-Haram in Makkah. The room is designed with contemporary classical elegance, featuring marble floors, plush gold fabrics, and intricate wood carvings. Soft morning light streams through large windows, creating a peaceful and luxurious setting for spiritual reflection and rest." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDERRACGe7nsfuw2CnpTfSW40VDRtd8KL9ZrTJ5xpEp1t5LIIihDGL5fYAhT_h5qvcI45OwgwSSMJKMZ4Mc4psOhdzOaWyvFqNztC8a0sAnE_FbR3Zf78sJ-xGbx_Va_q5VTXrb2GXErQHyKtIVF8uhpbKbRIi5uJEZRYJUKlpmDDyeDx7fNTGv2Ku82XIxahRYAzbfkql_05ifxTtk8s8X3tliL3gNkdrTFAV-U5dl4bMlCoKad-bF29A_i0eeGVeVsGFMbbG_BzY"/>
 </div>
@@ -341,7 +374,11 @@
 </div>
 </div>
 <!-- Package Card 4: VIP -->
-<div class="bg-surface-container-lowest border border-outline-variant shadow-sm overflow-hidden group rounded-xl">
+<div class="package-card bg-surface-container-lowest border border-outline-variant shadow-sm overflow-hidden group rounded-xl"
+     data-category="pantai"
+     data-location="sharm"
+     data-duration="3"
+     data-price="3650">
 <div class="relative h-64 overflow-hidden">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="An opulent hotel suite overlooking the Masjid al-Haram in Makkah. The room is designed with contemporary classical elegance, featuring marble floors, plush gold fabrics, and intricate wood carvings. Soft morning light streams through large windows, creating a peaceful and luxurious setting for spiritual reflection and rest." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDERRACGe7nsfuw2CnpTfSW40VDRtd8KL9ZrTJ5xpEp1t5LIIihDGL5fYAhT_h5qvcI45OwgwSSMJKMZ4Mc4psOhdzOaWyvFqNztC8a0sAnE_FbR3Zf78sJ-xGbx_Va_q5VTXrb2GXErQHyKtIVF8uhpbKbRIi5uJEZRYJUKlpmDDyeDx7fNTGv2Ku82XIxahRYAzbfkql_05ifxTtk8s8X3tliL3gNkdrTFAV-U5dl4bMlCoKad-bF29A_i0eeGVeVsGFMbbG_BzY"/>
 </div>
@@ -385,7 +422,11 @@
 </div>
 </div>
 <!-- Package Card 5: VIP -->
-<div class="bg-surface-container-lowest border border-outline-variant shadow-sm overflow-hidden group rounded-xl">
+<div class="package-card bg-surface-container-lowest border border-outline-variant shadow-sm overflow-hidden group rounded-xl"
+     data-category="gurun"
+     data-location="bahariya"
+     data-duration="2"
+     data-price="4000">
 <div class="relative h-64 overflow-hidden">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="An opulent hotel suite overlooking the Masjid al-Haram in Makkah. The room is designed with contemporary classical elegance, featuring marble floors, plush gold fabrics, and intricate wood carvings. Soft morning light streams through large windows, creating a peaceful and luxurious setting for spiritual reflection and rest." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDERRACGe7nsfuw2CnpTfSW40VDRtd8KL9ZrTJ5xpEp1t5LIIihDGL5fYAhT_h5qvcI45OwgwSSMJKMZ4Mc4psOhdzOaWyvFqNztC8a0sAnE_FbR3Zf78sJ-xGbx_Va_q5VTXrb2GXErQHyKtIVF8uhpbKbRIi5uJEZRYJUKlpmDDyeDx7fNTGv2Ku82XIxahRYAzbfkql_05ifxTtk8s8X3tliL3gNkdrTFAV-U5dl4bMlCoKad-bF29A_i0eeGVeVsGFMbbG_BzY"/>
 </div>
@@ -429,7 +470,11 @@
 </div>
 </div>
 <!-- Package Card 6: Haji -->
-<div class="bg-surface-container-lowest border border-outline-variant shadow-sm overflow-hidden group rounded-xl">
+<div class="package-card bg-surface-container-lowest border border-outline-variant shadow-sm overflow-hidden group rounded-xl"
+     data-category="pantai"
+     data-location="hurghada"
+     data-duration="3"
+     data-price="3500">
 <div class="relative h-64 overflow-hidden">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A historical mosque interior in Cairo with high ceilings, grand chandeliers, and sunlight filtering through stained glass windows. The atmosphere is quiet and dignified, showcasing the rich Islamic architectural heritage of Egypt. Deep green carpets and golden wall inscriptions reinforce the Al-Azhar green and deep gold color palette of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeFxYZapDTXHCC3F4WPRxIXCG9YEbZJcrMuvJ_IEggtAIZXPtalIvvNlPjdEF9CIjFYSKZ4EwzFfJRYn9bkhC1BJpC08lJKkWNArPXNIJN0YtevlWoF3ZMdF-tObBjq45Dh8aAqxvMV4zz78-7ypehvXvMHN_wTYv8O0WKAa-GR24-iQWnCwjUOsxaG67S_3qgrOqXyvdvJfcYiYUQ2GQjvx_uyjEZ_DKnKW4Ri6dgdVueWQjhnoCcSq7PqO7PrGHtXIyIDiRJxmw"/>
 </div>
@@ -551,11 +596,131 @@
 
 <script src="script.js"></script>
 <script>
+// ==========================
+// Mobile Menu
+// ==========================
+
 const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 
-menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
+if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+}
+
+// ==========================
+// Filter
+// ==========================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const cards = document.querySelectorAll(".package-card");
+
+    const categoryCheckboxes = document.querySelectorAll(".category-checkbox");
+
+    const durationFilter = document.getElementById("durationFilter");
+
+    const locationFilter = document.getElementById("locationFilter");
+
+    const priceFilter = document.getElementById("priceFilter");
+
+    const priceValue = document.getElementById("priceValue");
+
+    const applyBtn = document.getElementById("applyFilter");
+
+    const resetBtn = document.getElementById("resetFilter");
+
+    if (
+        !cards.length ||
+        !durationFilter ||
+        !locationFilter ||
+        !priceFilter ||
+        !priceValue ||
+        !applyBtn ||
+        !resetBtn
+    ) {
+        return;
+    }
+
+    priceFilter.addEventListener("input", () => {
+        priceValue.textContent = Number(priceFilter.value).toLocaleString("id-ID");
+    });
+
+    function applyFilter() {
+
+        const selectedCategories = [];
+
+        categoryCheckboxes.forEach(cb => {
+            if (cb.checked) {
+                selectedCategories.push(cb.value);
+            }
+        });
+
+        const duration = durationFilter.value;
+        const location = locationFilter.value;
+        const maxPrice = Number(priceFilter.value);
+
+        cards.forEach(card => {
+
+            const cardCategory = card.dataset.category;
+            const cardDuration = card.dataset.duration;
+            const cardLocation = card.dataset.location;
+            const cardPrice = Number(card.dataset.price);
+
+            let show = true;
+
+            if (
+                selectedCategories.length > 0 &&
+                !selectedCategories.includes(cardCategory)
+            ) {
+                show = false;
+            }
+
+            if (
+                duration !== "all" &&
+                cardDuration !== duration
+            ) {
+                show = false;
+            }
+
+            if (
+                location !== "all" &&
+                cardLocation !== location
+            ) {
+                show = false;
+            }
+
+            if (cardPrice > maxPrice) {
+                show = false;
+            }
+
+            card.style.display = show ? "" : "none";
+
+        });
+
+    }
+
+    applyBtn.addEventListener("click", applyFilter);
+
+    resetBtn.addEventListener("click", () => {
+
+        categoryCheckboxes.forEach(cb => cb.checked = false);
+
+        durationFilter.value = "all";
+
+        locationFilter.value = "all";
+
+        priceFilter.value = 4000;
+
+        priceValue.textContent = "4.000";
+
+        cards.forEach(card => {
+            card.style.display = "";
+        });
+
+    });
+
 });
 </script>
 
