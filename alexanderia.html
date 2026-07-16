@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alexandria - Pesona Cairo Premium</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#001c3b",
+                    "on-primary-container": "#003d46",
+                    "surface-tint": "#006877",
+                    "outline": "#6d797c",
+                    "on-primary-fixed": "#001f25",
+                    "surface-dim": "#d9dadb",
+                    "surface-container-low": "#f3f4f5",
+                    "on-secondary-fixed-variant": "#004787",
+                    "on-background": "#191c1d",
+                    "inverse-surface": "#2e3132",
+                    "surface-variant": "#e1e3e4",
+                    "on-tertiary-container": "#473300",
+                    "secondary-fixed-dim": "#a6c8ff",
+                    "on-tertiary-fixed-variant": "#5b4302",
+                    "on-tertiary-fixed": "#261a00",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "primary-fixed-dim": "#56d7ef",
+                    "secondary": "#1e5fa8",
+                    "on-primary-fixed-variant": "#004e5a",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-surface-variant": "#3d494c",
+                    "inverse-primary": "#56d7ef",
+                    "surface-container": "#edeeef",
+                    "secondary-fixed": "#d5e3ff",
+                    "on-surface": "#191c1d",
+                    "surface-container-high": "#e7e8e9",
+                    "on-secondary-container": "#00427e",
+                    "primary-container": "#12afc6",
+                    "primary-fixed": "#a2eeff",
+                    "tertiary": "#755a1a",
+                    "surface-bright": "#f8f9fa",
+                    "outline-variant": "#bcc9cc",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed": "#ffdf9f",
+                    "surface": "#f8f9fa",
+                    "tertiary-fixed-dim": "#e6c277",
+                    "primary": "#006877",
+                    "on-secondary": "#ffffff",
+                    "background": "#f8f9fa",
+                    "secondary-container": "#7ab0fe",
+                    "tertiary-container": "#bc9b55",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "base": "8px",
+                    "xs": "4px",
+                    "md": "24px",
+                    "xl": "80px",
+                    "sm": "12px",
+                    "lg": "48px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "label-md": ["Hanken Grotesk"],
+                    "headline-lg": ["Playfair Display"],
+                    "headline-xl": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "body-sm": ["Hanken Grotesk"],
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-md": ["Playfair Display"],
+                    "body-lg": ["Hanken Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .luxury-shadow {
+            box-shadow: 0 10px 40px -15px rgba(0, 0, 0, 0.1);
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(0, 28, 59, 0.6), rgba(25, 28, 29, 0.4));
+        }
+        .card-transition {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-transition:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px -12px rgba(18, 175, 198, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- Top Navigation Bar -->
+<nav class="bg-secondary/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/20 shadow-sm h-20 flex justify-between items-center px-margin-desktop w-full max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-on-secondary italic">Pesona Cairo</div>
+<div class="hidden md:flex gap-md items-center">
+<a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="#">Beranda</a>
+<a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="#">Paket Umroh</a>
+<a class="text-primary-fixed font-bold border-b-2 border-primary-fixed pb-1" href="#">Wisata Cairo</a>
+<a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="#">Handling</a>
+<a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="#">Visa</a>
+<a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="#">Tentang Kami</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-bold transition-all duration-300 active:scale-95 hover:bg-primary-fixed">
+        Konsultasi Gratis
+    </button>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-[85vh] w-full overflow-hidden flex items-center justify-center text-center">
+<img alt="Panoramic Alexandria Hero" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuoD1TXNa1aCPkq_hTzobZzTZvvpB8b4LZ3hDp9iuX7k95ulKceS1r2NHIS_Dmk1xEVgm1aF444pNPWjQLGGlLaSjLNpbbtD8Iliz1sN52qbKswtyB8XvmY2bTZR-z0ZT9O3N_LkGN8UMfDwzqUjgJ9JHty_T4G-lABoIMMYqhLcReBrywObXgkBKP4VkwsOP88pgvAVCzfPEdocB1SavGylkqatHUZQDhEpxnEevohHbmIHHZcoS-RRSE"/>
+<div class="absolute inset-0 hero-overlay"></div>
+<div class="relative z-10 max-w-4xl px-margin-mobile space-y-md">
+<span class="inline-block px-4 py-1.5 rounded-full bg-primary-container/20 backdrop-blur-md text-primary-fixed font-label-md tracking-[0.2em] uppercase">Eksklusif Destinasi</span>
+<h1 class="font-headline-xl text-[56px] md:text-[72px] text-white leading-tight">Wisata Alexandria</h1>
+<p class="font-body-lg text-white/90 text-xl max-w-2xl mx-auto leading-relaxed">
+            Kota pesisir Laut Mediterania yang kaya akan warisan sejarah Islam dan peradaban kuno.
+        </p>
+<div class="pt-md">
+<button class="bg-primary-container text-on-primary-container px-10 py-4 rounded-full font-bold text-lg luxury-shadow hover:scale-105 transition-transform duration-300">
+                Eksplorasi Kota
+            </button>
+</div>
+</div>
+</header>
+<!-- Main Attraction Grid -->
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-xl bg-surface-container-lowest">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-secondary text-4xl md:text-5xl mb-xs">Warisan Klasik Mediterania</h2>
+<div class="w-24 h-1 bg-primary-container mx-auto mt-md"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Montazah Palace -->
+<article class="bg-white rounded-[16px] overflow-hidden luxury-shadow card-transition flex flex-col group border border-outline-variant/20">
+<div class="relative h-72 overflow-hidden">
+<img alt="Montazah Palace" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLunHoCDlcVlRGRYPD312jfqRM02-85GxvP6JGV0vf3dL7cIpJNr9HAk2k2xfqQxDe3qVDlH7ouu2_Vo5iKNasuueDweQse1vNIC6OeSBpOOUxP4Wj70643-dwl0vYqpg8Ln0pO8O9cFlXeK7kNyv6PELuOLjA7G-PzR8laYsNXAIVklwO62wqisVcIOINLEbqVVV2HcPFYiXCevW3_7vB5k6Y3_vxufkE53oEP5BkbUdLRJtcQUZylMhn4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-secondary-fixed/40 to-transparent"></div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-headline-md text-on-surface mb-sm">Montazah Palace</h3>
+<p class="text-on-surface-variant font-body-md mb-lg flex-grow leading-relaxed">
+                    Istana megah peninggalan keluarga kerajaan Mesir dengan taman luas yang berhadapan langsung dengan birunya Mediterania.
+                </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="#">
+                    Pelajari Lebih Lanjut <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Bibliotheca Alexandrina -->
+<article class="bg-white rounded-[16px] overflow-hidden luxury-shadow card-transition flex flex-col group border border-outline-variant/20">
+<div class="relative h-72 overflow-hidden">
+<img alt="Bibliotheca Alexandrina" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLssfbNdiYUMEGJ17oJCDVyJ6rcp5Er55FlIo5CtSHRhvJZ4pFeMKwhabIdgo4MQcJklHmQk_oDM9S1MnHyRa3piUO1FNKOGOwrAn1laDwyQA6HqvaSYVEp39hMsM-5oJLjhZZjMml4AhQKKZkBkiXgJ8JRJSjBHRcatrF-DFc6zue8zGKcHfH7avfr9l6krNO0QzJvSy3lri6mTLblOoiP17qzhfCguABVih7gZMGiDk_cFaxKp9CQNezE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-secondary-fixed/40 to-transparent"></div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-headline-md text-on-surface mb-sm">Bibliotheca Alexandrina</h3>
+<p class="text-on-surface-variant font-body-md mb-lg flex-grow leading-relaxed">
+                    Pusat ilmu pengetahuan dunia modern yang dibangun sebagai penghormatan terhadap Perpustakaan Alexandria kuno yang legendaris.
+                </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="#">
+                    Pelajari Lebih Lanjut <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Benteng Qaitbay -->
+<article class="bg-white rounded-[16px] overflow-hidden luxury-shadow card-transition flex flex-col group border border-outline-variant/20">
+<div class="relative h-72 overflow-hidden">
+<img alt="Benteng Qaitbay" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLtSAFSRJLSyIcAksuTW1kS2PQ6BmMFr_i5W8FcyEYgRHFcEbOLWIe4hjGlqg59hKwbdFk6MImQqANBIsebVoXYsM3TlB34lQCgvaXwtmmLYXsGWkb411b90gLihNgX7LniN7tlq8RvwPqeyaKhqvn9MtJBuJvSs7uFOoJevgb0KdhvC3fjDJhcuf9jHORQ1r8hskOXIkIJAz1Ag39pwmfOec9BrlVYKFs1NtkbDne6b_6s5hF9-_UcT"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-secondary-fixed/40 to-transparent"></div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-headline-md text-on-surface mb-sm">Benteng Qaitbay</h3>
+<p class="text-on-surface-variant font-body-md mb-lg flex-grow leading-relaxed">
+                    Benteng pertahanan abad ke-15 yang dibangun di lokasi Mercusuar Alexandria yang runtuh, simbol kejayaan militer Islam.
+                </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="#">
+                    Pelajari Lebih Lanjut <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Makam Imam Al-Bushiri -->
+<article class="bg-white rounded-[16px] overflow-hidden luxury-shadow card-transition flex flex-col group border border-outline-variant/20">
+<div class="relative h-72 overflow-hidden">
+<img alt="Makam Imam Al-Bushiri" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLuyyX9fAQJFAXGYvAGwogQceOKdnDtjKQU5cCpkKIDtvijXes-BYEz06YovB1K1-e2g-v55dR8IgCUWspo72occlM8IsL6MALMs4Z0Xl49aI2B-4Uo7U3VdSlinq_e9bi-9Iyvsct7njBIEU74TzKaJNl9yxdeOPIuOnnRHHT33p2mK_dCtJIJlhDHWMMmCVY5jjRZAqzTuD-V3Dy5Nis_ViGw4jMzKuBDU762uFQxl73GaGf9hwjPcgkE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-secondary-fixed/40 to-transparent"></div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-headline-md text-on-surface mb-sm">Makam Imam Al-Bushiri</h3>
+<p class="text-on-surface-variant font-body-md mb-lg flex-grow leading-relaxed">
+                    Ziarah spiritual ke makam pengarang Kasidah Burdah yang legendaris dengan arsitektur masjid yang indah.
+                </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="#">
+                    Pelajari Lebih Lanjut <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Makam Abu Abbas Al-Mursi -->
+<article class="bg-white rounded-[16px] overflow-hidden luxury-shadow card-transition flex flex-col group border border-outline-variant/20">
+<div class="relative h-72 overflow-hidden">
+<img alt="Makam Abu Abbas Al-Mursi" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLtU3UQmUsM1qavExvyuBtcC0Jt1Z9qtSYlhaRj7PuxvnaHPrS09WVCpOY6GVzkDI6iOLK4dA6ceeKMkEzyEvConF6RBXMsx5JxtZ3W-HmtwPs8C0WJI8QeGYjrOGW58PmxgZj7KYjqNcU0Uua9pWAnY-cHsy7wkbIQcROXMJacAArYN8XbgPj4WfMXKkPJguiOuSOj0hKgBkxnTbzPiB0U2XmdxhMJEtt-JRqL_779s_kZYIKrB9YL7I2A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-secondary-fixed/40 to-transparent"></div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-headline-md text-on-surface mb-sm">Makam Abu Abbas Al-Mursi</h3>
+<p class="text-on-surface-variant font-body-md mb-lg flex-grow leading-relaxed">
+                    Masjid bersejarah paling megah di Alexandria, pusat kegiatan spiritual dan arsitektur Islam Andalusia.
+                </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="#">
+                    Pelajari Lebih Lanjut <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Makam Nabi Daniel -->
+<article class="bg-white rounded-[16px] overflow-hidden luxury-shadow card-transition flex flex-col group border border-outline-variant/20">
+<div class="relative h-72 overflow-hidden">
+<img alt="Makam Nabi Daniel" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLuJ5mQulZFWLt6SfjM-f1tO-bQqOmPNAdxuXkXuDlvtSHMRsXNkGfIPvVxvXyBxtR8HPnqkHEwpWjVveiVa0DzitlRtD3dwxKil2jVg7avj0_gGu8zKAQJ476BhXF8hEgg4zA5kYHVu9jEIRIGN5I52KCGc3hFwnmrArDZ4ab_MVXrsKPlVHd9hL1fmyquj9UP1bLFlP0tHMALJJvrVwkPWUcFQq9HYjf_CmKRgC7scMNcBedrWhkYolGs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-secondary-fixed/40 to-transparent"></div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-headline-md text-on-surface mb-sm">Makam Nabi Daniel</h3>
+<p class="text-on-surface-variant font-body-md mb-lg flex-grow leading-relaxed">
+                    Situs bersejarah yang dipercaya sebagai makam Nabi Daniel dan Lukmanul Hakim, dikelilingi oleh suasana kota tua yang tenang.
+                </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="#">
+                    Pelajari Lebih Lanjut <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Pantai Mediterania -->
+<article class="bg-white rounded-[16px] overflow-hidden luxury-shadow card-transition flex flex-col group border border-outline-variant/20">
+<div class="relative h-72 overflow-hidden">
+<img alt="Pantai Mediterania" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/AP1WRLthKL3_xhYU251BdiaTho1LmY8eNonEEpEirYtChz3zRVnodXrcFdTfnmPCL1V9I9-qFwTS10qlN--Npz8PyAVKtRBgzyXxzvGYsZcgQ7PNrQHQNUSVXlAT-_pYtU39dbF0XJVMUCtIQC91vWK29xQPigZcDjD_4oUmojgGyVkPrt-9Kgm2WFZqPsMQgDHECHokMLu_v13knlUUMaWJ6CGs7oJJQtt7wuM7LHBuNl4Efl_HsWVfANMwuiA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-secondary-fixed/40 to-transparent"></div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-headline-md text-on-surface mb-sm">Pantai Mediterania</h3>
+<p class="text-on-surface-variant font-body-md mb-lg flex-grow leading-relaxed">
+                    Nikmati hembusan angin laut di sepanjang jalan tepi pantai Alexandria yang ikonik, tempat bertemunya budaya dan alam.
+                </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="#">
+                    Pelajari Lebih Lanjut <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</main>
+<!-- Planning Section -->
+<section class="bg-on-secondary-fixed py-xl text-white overflow-hidden relative">
+<!-- Decorative gold accent -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-tertiary/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-xl items-center relative z-10">
+<div class="space-y-md">
+<h2 class="font-headline-lg text-4xl md:text-5xl leading-tight">Rencanakan Perjalanan Anda ke Alexandria</h2>
+<div class="space-y-sm">
+<div class="flex items-start gap-md">
+<div class="bg-primary-container/20 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary-fixed">verified_user</span>
+</div>
+<div>
+<h4 class="font-bold text-primary-fixed text-lg">Professional Handling</h4>
+<p class="text-white/70">Tim ahli kami mengurus segala kebutuhan logistik Anda dengan standar pelayanan bintang lima.</p>
+</div>
+</div>
+<div class="flex items-start gap-md">
+<div class="bg-primary-container/20 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary-fixed">schedule</span>
+</div>
+<div>
+<h4 class="font-bold text-primary-fixed text-lg">2.5 Hours from Cairo</h4>
+<p class="text-white/70">Akses mudah dan nyaman melalui Desert Road dengan kendaraan premium kami.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-md pt-md">
+<button class="bg-primary-container text-on-primary-container px-8 py-3 rounded-full font-bold flex items-center gap-2 hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined">calendar_month</span>
+                    Mulai Perjalanan
+                </button>
+<button class="border border-white/30 text-white px-8 py-3 rounded-full font-bold hover:bg-white/10 transition-colors">
+                    Hubungi Agen
+                </button>
+</div>
+</div>
+<div class="rounded-2xl overflow-hidden luxury-shadow h-[450px] relative border border-white/10">
+<img alt="Alexandria Map" class="w-full h-full object-cover grayscale-[20%] brightness-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCij9Ah-W4tm3JqRJASQuRXm1vvSro-JnFFoqjSOGUQNyBdS5bhxUfaZBZrI-cLmv87tC5iihH_jvFpHsHq9d7E2erx3B2xU2sBnN4MKc2JJBQeUX_BAmpYKiFQNFvz_KUk9_E4QG2D4tbCFSyzeT5QkCdDw5kwpYgo8OqJV8R8IkqNAOu_VM0kPmVrtgqPe6d3c-32SFa_sqK46jf1S0x_i6YwyqI7kckbEjEreSTbXskvNXv85U-d"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-secondary-fixed/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8 bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20">
+<div class="flex items-center gap-2 font-bold text-primary-fixed mb-1">
+<span class="material-symbols-outlined">explore</span>
+                    Lokasi Strategis
+                </div>
+<p class="text-sm text-white/90">Eksplorasi setiap sudut Alexandria dengan rute wisata paling efisien dan mempesona.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-secondary border-t border-primary/30 pt-xl pb-md">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter text-on-secondary/70">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-sm text-headline-sm text-on-secondary mb-md">Pesona Cairo</div>
+<p class="font-body-sm mb-md leading-relaxed">Sahabat perjalanan ibadah dan wisata Anda di negeri Para Nabi. Layanan terpercaya sejak 2010.</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-secondary mb-md uppercase tracking-wider">Destinasi</h4>
+<ul class="space-y-xs font-body-sm">
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Kairo</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Alexandria</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Luxor &amp; Aswan</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Semenanjung Sinai</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-secondary mb-md uppercase tracking-wider">Navigasi</h4>
+<ul class="space-y-xs font-body-sm">
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Galeri</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Kontak</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Syarat &amp; Ketentuan</a></li>
+<li><a class="hover:text-primary-fixed transition-colors" href="#">Kebijakan Privasi</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-secondary mb-md uppercase tracking-wider">Sosial Media</h4>
+<div class="flex gap-sm">
+<a class="w-10 h-10 rounded-full border border-on-secondary/20 flex items-center justify-center hover:bg-primary-fixed hover:text-on-primary-fixed transition-all" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="w-10 h-10 rounded-full border border-on-secondary/20 flex items-center justify-center hover:bg-primary-fixed hover:text-on-primary-fixed transition-all" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="w-10 h-10 rounded-full border border-on-secondary/20 flex items-center justify-center hover:bg-primary-fixed hover:text-on-primary-fixed transition-all" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-xl pt-md border-t border-on-secondary/10 flex flex-col md:flex-row justify-between items-center gap-md">
+<p class="font-label-caps text-label-caps">© 2024 Pesona Cairo. Terdaftar Kemenag RI / PPIU No. 123456.</p>
+<div class="flex gap-md opacity-50">
+<span class="material-symbols-outlined">verified_user</span>
+<span class="material-symbols-outlined">language</span>
+<span class="material-symbols-outlined">payment</span>
+</div>
+</div>
+</footer>
+<script>
+    // Smooth scroll and reveal animation
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-8');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('article').forEach((el, index) => {
+        el.classList.add('opacity-0', 'translate-y-8', 'transition-all', 'duration-700');
+        el.style.transitionDelay = `${index * 100}ms`;
+        observer.observe(el);
+    });
+</script>
+</body></html>
