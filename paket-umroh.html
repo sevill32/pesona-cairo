@@ -84,6 +84,127 @@
 <!-- Main Catalog Section -->
 <section class="px-margin-desktop max-w-7xl mx-auto pb-lg">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Sidebar Filters -->
+<aside class="lg:col-span-3 space-y-8">
+    <div class="bg-surface-container-low p-8 border border-outline-variant/30 rounded-xl sticky top-28 shadow-sm">
+
+        <!-- Header -->
+        <div class="flex items-center gap-3 mb-6 border-b border-outline-variant/20 pb-4">
+            <span class="material-symbols-outlined text-primary text-2xl">
+                tune
+            </span>
+            <h2 class="font-headline-md text-lg font-semibold">
+                Filter Perjalanan
+            </h2>
+        </div>
+
+        <!-- Kategori -->
+        <div class="mb-8">
+            <h3 class="font-label-md text-primary mb-4 uppercase">
+                Kategori Perjalanan
+            </h3>
+
+            <div class="space-y-3">
+
+                <label class="flex items-center gap-3 cursor-pointer group">
+                    <input type="checkbox" class="rounded text-primary focus:ring-primary">
+                    <span class="group-hover:text-primary transition">
+                        Pantai & Laut Merah
+                    </span>
+                </label>
+
+                <label class="flex items-center gap-3 cursor-pointer group">
+                    <input type="checkbox" class="rounded text-primary focus:ring-primary">
+                    <span class="group-hover:text-primary transition">
+                        Gurun & Oasis
+                    </span>
+                </label>
+
+                <label class="flex items-center gap-3 cursor-pointer group">
+                    <input type="checkbox" class="rounded text-primary focus:ring-primary">
+                    <span class="group-hover:text-primary transition">
+                        Sejarah & Budaya
+                    </span>
+                </label>
+
+                <label class="flex items-center gap-3 cursor-pointer group">
+                    <input type="checkbox" class="rounded text-primary focus:ring-primary">
+                    <span class="group-hover:text-primary transition">
+                        Religi & Spiritual
+                    </span>
+                </label>
+
+                <label class="flex items-center gap-3 cursor-pointer group">
+                    <input type="checkbox" class="rounded text-primary focus:ring-primary">
+                    <span class="group-hover:text-primary transition">
+                        Pegunungan & Sinai
+                    </span>
+                </label>
+
+            </div>
+        </div>
+
+        <!-- Durasi -->
+        <div class="mb-8">
+            <h3 class="font-label-md text-primary mb-4 uppercase">
+                Durasi
+            </h3>
+
+            <select class="w-full bg-surface-container border-b border-primary py-2 focus:ring-0">
+                <option>Semua Durasi</option>
+                <option>2 Hari 1 Malam</option>
+                <option>3 Hari 2 Malam</option>
+                <option>4 Hari 3 Malam</option>
+            </select>
+        </div>
+
+        <!-- Destinasi -->
+        <div class="mb-8">
+            <h3 class="font-label-md text-primary mb-4 uppercase">
+                Destinasi Utama
+            </h3>
+
+            <select class="w-full bg-surface-container border-b border-primary py-2 focus:ring-0">
+                <option>Semua Destinasi</option>
+                <option>Laut Merah</option>
+                <option>Sinai</option>
+                <option>Bahariya Oasis</option>
+                <option>Matruh</option>
+                <option>Hurghada</option>
+            </select>
+        </div>
+
+        <!-- Harga -->
+        <div class="mb-8">
+            <h3 class="font-label-md text-primary mb-4 uppercase">
+                Rentang Harga
+            </h3>
+
+            <input
+                type="range"
+                class="w-full accent-primary"
+                min="3200"
+                max="4000">
+
+            <div class="flex justify-between text-xs text-on-surface-variant mt-2">
+                <span>3.200</span>
+                <span>4.000+</span>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex gap-3">
+
+            <button class="flex-1 py-3 border border-primary text-primary rounded-lg hover:bg-primary/10 transition">
+                Reset
+            </button>
+
+            <button class="flex-1 py-3 bg-secondary text-on-secondary rounded-lg hover:bg-on-secondary-fixed-variant transition">
+                Terapkan
+            </button>
+        </div>
+    </div>
+</aside>
 <!-- Grid Packages -->
 <div class="lg:col-span-9">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
