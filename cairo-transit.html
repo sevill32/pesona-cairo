@@ -133,31 +133,71 @@
 </head>
 <body class="bg-surface text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-sm">
-<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-screen-2xl mx-auto">
-<span class="font-headline-md text-headline-md font-bold text-primary">Pesona Cairo</span>
-<div class="hidden md:flex items-center space-x-8">
-<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Beranda</a>
-<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Paket Umroh</a>
-<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Wisata Cairo</a>
-<a class="font-body-md text-body-md tracking-wide text-primary font-bold border-b-2 border-primary pb-1" href="#">LA Egypt</a>
-<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Handling</a>
-<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Tentang Kami</a>
-</div>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md hover:bg-on-primary-fixed-variant transition-all active:scale-95">
+<nav class="bg-secondary/95 backdrop-blur-md sticky top-0 z-50 border-b border-white/10 shadow-sm">
+
+    <div class="max-w-7xl mx-auto px-4 md:px-margin-desktop h-20 flex items-center justify-between">
+
+        <!-- Logo -->
+        <div class="font-headline-md text-headline-md font-bold italic text-on-secondary">
+            Pesona Cairo
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="index.html">Beranda</a>
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="wisata-cairo.html">Wisata Cairo</a>
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="paket-umroh.html">Paket Trip Cairo</a>
+            <a class="text-primary-fixed font-bold border-b-2 border-primary-fixed pb-1" href="paket-umroh.html">LA Egypt</a>
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="handling.html">Handling</a>
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="tentang-kami.html">Tentang Kami</a>
+        </div>
+
+        <!-- Desktop Button -->
+        <a class="hidden md:block btn bg-primary-container text-on-primary-container px-6 py-2.5 font-bold rounded-lg hover:bg-primary-fixed transition-all active:scale-95 duration-200"
+           href="https://wa.me/201127847321">
+            Konsultasi Gratis
+        </a>
+
+        <!-- Mobile Hamburger -->
+        <button id="menuBtn" class="md:hidden text-white text-3xl">
+            &#9776;
+        </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-secondary border-t border-white/10">
+
+        <div class="flex flex-col p-4 space-y-4">
+
+            <a href="index.html">Beranda</a>
+            <a href="wisata-cairo.html">Wisata Cairo</a>
+            <a href="paket-umroh.html">Paket Trip Cairo</a>
+            <a href="la-egypt.html">LA Egypt</a>
+            <a href="handling.html">Handling</a>
+            <a href="tentang-kami.html">Tentang Kami</a>
+
+            <!-- Mobile Konsultasi -->
+            <a class="btn bg-primary-container text-on-primary-container px-6 py-3 rounded-lg text-center font-bold"
+               href="https://wa.me/201127847321">
                 Konsultasi Gratis
-            </button>
-</div>
+            </a>
+
+        </div>
+
+    </div>
+
 </nav>
+<main class="relative overflow-hidden">
 <!-- Hero Section -->
-<header class="relative h-[819px] flex items-center overflow-hidden">
+<section class="relative h-[90vh] overflow-hidden">
 <div class="absolute inset-0 z-0">
 <div class="bg-cover bg-center w-full h-full transform scale-105" data-alt="A majestic wide shot of the Great Pyramids of Giza and the Sphinx at sunrise. The soft morning light casts long shadows across the golden sand, creating a serene and timeless atmosphere. The sky is a gradient of Cairo Turquoise and pale amber, reflecting a premium editorial travel aesthetic. The composition is clean and expansive, emphasizing the grandeur of Egypt's ancient monuments." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_iUYZ4UyK1QMw0b8JFaPVs2llvtXbab4zYlt1PNgfdB2Q8wxX1LNNBENgBfjRL8L1x2XOWe50qbNh6FmvpyDihzssf7GgVF8jS0IQDi7FRcDOZA9xwn-1oWZEH2EMMYD_JZOfENcHcf5_BSsv-URpTR8x78j7F26axVBBgOXMMjwmlp6FV7IBdFIi56nD-PoMIcFFqr2HcLkyIbJD3yG_F3S6BiVZBJ2Xflao4BqW7uUnht913d17')"></div>
 <div class="absolute inset-0 bg-gradient-to-r from-on-background/60 via-on-background/20 to-transparent"></div>
 </div>
-<div class="relative z-10 px-margin-desktop max-w-screen-2xl mx-auto w-full text-white">
+<div class="relative z-10 px-margin-desktop max-w-7xl mx-auto w-full pt-32 text-on-secondary">
 <div class="max-w-2xl">
-<span class="inline-block px-4 py-1 rounded-full bg-primary-container text-on-primary-container font-label-md mb-6 uppercase tracking-widest">Premium Transit Service</span>
+<span class="inline-block px-4 py-1 mb-6 bg-primary/30 text-white backdrop-blur-md rounded-full font-label-md text-[11px] uppercase tracking-[0.2em] border border-white/20">Premium Transit Service</span>
 <h1 class="font-headline-xl text-headline-xl mb-4 leading-tight">Cairo Transit Package</h1>
 <p class="font-body-lg text-body-lg text-surface-variant/90 mb-8 max-w-lg">
                     Maximize your layover with a focused tour of Egypt's crown jewels. Experience the Pyramids and the spirit of Cairo without the stress of logistics.
@@ -169,7 +209,8 @@
 </div>
 </div>
 </div>
-</header>
+</section>
+</main>
 <main class="max-w-screen-2xl mx-auto px-margin-desktop py-xl">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
 <!-- Left Side: Itinerary Timeline -->
