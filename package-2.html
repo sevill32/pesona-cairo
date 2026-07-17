@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Package 2 Days 1 Night - Pesona Cairo Luxury Travel</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface-dim": "#d9dadb",
+                "on-background": "#191c1d",
+                "outline-variant": "#bcc9cc",
+                "surface": "#f8f9fa",
+                "primary": "#006877",
+                "on-primary-fixed-variant": "#004e5a",
+                "on-secondary-fixed-variant": "#004787",
+                "primary-fixed": "#a2eeff",
+                "inverse-primary": "#56d7ef",
+                "on-tertiary-fixed": "#261a00",
+                "on-error": "#ffffff",
+                "tertiary-fixed-dim": "#e6c277",
+                "tertiary-fixed": "#ffdf9f",
+                "tertiary": "#755a1a",
+                "surface-container-highest": "#e1e3e4",
+                "tertiary-container": "#bc9b55",
+                "error": "#ba1a1a",
+                "primary-container": "#12afc6",
+                "on-error-container": "#93000a",
+                "on-surface": "#191c1d",
+                "on-secondary-fixed": "#001c3b",
+                "on-secondary": "#ffffff",
+                "on-tertiary-fixed-variant": "#5b4302",
+                "error-container": "#ffdad6",
+                "on-primary-fixed": "#001f25",
+                "background": "#f8f9fa",
+                "on-surface-variant": "#3d494c",
+                "surface-container-lowest": "#ffffff",
+                "secondary-fixed-dim": "#a6c8ff",
+                "inverse-surface": "#2e3132",
+                "secondary-container": "#7ab0fe",
+                "secondary": "#1e5fa8",
+                "on-primary": "#ffffff",
+                "surface-container-low": "#f3f4f5",
+                "on-primary-container": "#003d46",
+                "surface-container": "#edeeef",
+                "surface-bright": "#f8f9fa",
+                "outline": "#6d797c",
+                "surface-variant": "#e1e3e4",
+                "primary-fixed-dim": "#56d7ef",
+                "on-secondary-container": "#00427e",
+                "inverse-on-surface": "#f0f1f2",
+                "on-tertiary-container": "#473300",
+                "surface-container-high": "#e7e8e9",
+                "secondary-fixed": "#d5e3ff",
+                "surface-tint": "#006877",
+                "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "margin-mobile": "16px",
+                "xl": "80px",
+                "lg": "48px",
+                "xs": "4px",
+                "margin-desktop": "64px",
+                "sm": "12px",
+                "md": "24px",
+                "gutter": "24px",
+                "base": "8px"
+            },
+            "fontFamily": {
+                "body-md": ["Hanken Grotesk"],
+                "body-lg": ["Hanken Grotesk"],
+                "headline-lg": ["Playfair Display"],
+                "label-md": ["Hanken Grotesk"],
+                "headline-md": ["Playfair Display"],
+                "headline-lg-mobile": ["Playfair Display"],
+                "headline-xl": ["Playfair Display"],
+                "body-sm": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .itinerary-line::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #bcc9cc;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-screen-2xl mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">
+            Pesona Cairo
+        </div>
+<nav class="hidden md:flex gap-md">
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Beranda</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Paket Umroh</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Wisata Cairo</a>
+<a class="font-body-md text-body-md tracking-wide text-primary font-bold border-b-2 border-primary pb-1" href="#">LA Egypt</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Handling</a>
+<a class="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#">Tentang Kami</a>
+</nav>
+<button class="bg-primary text-on-primary px-md py-sm rounded-full font-label-md hover:bg-on-primary-fixed-variant transition-all active:opacity-80">
+            Konsultasi Gratis
+        </button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[614px] min-h-[400px] flex items-end overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-on-background/20 to-transparent z-10"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="A majestic wide-angle shot of the Giza Pyramids at sunset, with a warm golden glow illuminating the ancient stones and the Cairo skyline in the far distance." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3TSxWeU7EJV_RyFAgK5gz24-dqfuauBKlKRa1U_ZuVuZgMGSiS0wLhqqHvxmrQx-DoStmFu59Ez0d3S3Ca8nN4m8ZyMqVNZx0gp94vis4yYXBUnk0XWYAjyJFUCezvMKSA4VH3MjWyD6jGZ77z7PeHTh_3QIACNPqJ37Y4eGzMbNhSl9k3cHQ-Qh1V6ntT378SOHDSEo6-3QRClzENDIbFaXvruCS1UsSQHQ_SKRG94Mzl2TXToFo')"></div>
+</div>
+<div class="relative z-20 px-margin-desktop pb-xl max-w-screen-2xl mx-auto w-full">
+<div class="max-w-2xl">
+<span class="inline-block bg-primary-container text-on-primary-container font-label-md px-md py-xs rounded-full mb-md uppercase tracking-widest">Premium Land Arrangement</span>
+<h1 class="font-headline-xl text-headline-xl text-white mb-sm">Package 2 Days 1 Night</h1>
+<p class="font-body-lg text-body-lg text-surface-variant">Discover the essence of Cairo in a curated 2-day private tour. Experience the majesty of the Pyramids and spiritual heritage.</p>
+</div>
+</div>
+</section>
+<!-- Content Grid (Itinerary & Pricing) -->
+<section class="py-xl px-margin-desktop max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
+<!-- Itinerary (Left Column) -->
+<div class="lg:col-span-7">
+<h2 class="font-headline-lg text-headline-lg mb-lg border-l-4 border-primary pl-md">Perjalanan Eksklusif Anda</h2>
+<div class="space-y-xl">
+<!-- Day 1 -->
+<div class="relative pl-10 itinerary-line">
+<div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center z-10 border-4 border-surface">
+<span class="text-white text-xs font-bold">01</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-sm">Hari Pertama: Ancient Wonders</h3>
+<div class="bg-white p-md rounded-xl shadow-sm border border-outline-variant/30">
+<ul class="space-y-sm">
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1">flight_land</span>
+<p class="font-body-md text-body-md">Arrival &amp; Pick up at Cairo International Airport</p>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1">architecture</span>
+<p class="font-body-md text-body-md">Visit Giza Pyramids, Great Sphinx, and Perfume Factory</p>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1">restaurant</span>
+<p class="font-body-md text-body-md">Authentic Local Lunch</p>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1">mosque</span>
+<p class="font-body-md text-body-md">Spiritual visit to Imam Syafi'i Mosque</p>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1">directions_boat</span>
+<p class="font-body-md text-body-md">Luxury Nile Cruise Dinner with traditional entertainment</p>
+</li>
+</ul>
+</div>
+</div>
+<!-- Day 2 -->
+<div class="relative pl-10">
+<div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center z-10 border-4 border-surface">
+<span class="text-white text-xs font-bold">02</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-sm">Hari Kedua: Culture &amp; Heritage</h3>
+<div class="bg-white p-md rounded-xl shadow-sm border border-outline-variant/30">
+<ul class="space-y-sm">
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1">museum</span>
+<p class="font-body-md text-body-md">Visit NMEC Museum (The Royal Mummies)</p>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1">restaurant_menu</span>
+<p class="font-body-md text-body-md">Traditional Lunch</p>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1">history_edu</span>
+<p class="font-body-md text-body-md">Visit Al-Azhar Mosque &amp; Imam Al-Husein Shrine</p>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1">shopping_bag</span>
+<p class="font-body-md text-body-md">Shopping at Khan El-Khalili Bazaar</p>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1">departure_board</span>
+<p class="font-body-md text-body-md">Dinner Box &amp; Transfer to Airport for departure</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Pricing & CTA (Right Column) -->
+<div class="lg:col-span-5">
+<div class="sticky top-28">
+<div class="bg-on-background rounded-2xl p-lg text-white shadow-xl overflow-hidden relative">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-[120px]">payments</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-md border-b border-surface-variant/20 pb-md">Investasi</h3>
+<div class="space-y-md mb-lg">
+<div class="flex justify-between items-center bg-white/5 p-md rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+<div>
+<p class="font-label-md text-surface-variant opacity-70">10 – 15 PAX</p>
+<p class="font-body-lg font-bold">Small Group</p>
+</div>
+<div class="text-right">
+<p class="text-primary-fixed text-headline-md font-bold">255 <span class="text-body-sm font-normal">USD</span></p>
+</div>
+</div>
+<div class="flex justify-between items-center bg-primary p-md rounded-xl border border-primary-container/30 relative shadow-lg">
+<div class="absolute -top-3 right-4 bg-tertiary text-white text-[10px] px-2 py-0.5 rounded-full font-bold">BEST VALUE</div>
+<div>
+<p class="font-label-md text-primary-fixed opacity-90">20 – 30 PAX</p>
+<p class="font-body-lg font-bold">Recommended</p>
+</div>
+<div class="text-right">
+<p class="text-white text-headline-md font-bold">240 <span class="text-body-sm font-normal">USD</span></p>
+</div>
+</div>
+<div class="flex justify-between items-center bg-white/5 p-md rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+<div>
+<p class="font-label-md text-surface-variant opacity-70">40 – 50 PAX</p>
+<p class="font-body-lg font-bold">Large Group</p>
+</div>
+<div class="text-right">
+<p class="text-primary-fixed text-headline-md font-bold">225 <span class="text-body-sm font-normal">USD</span></p>
+</div>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container py-md rounded-xl font-bold flex items-center justify-center gap-sm hover:bg-primary-fixed transition-all group">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">chat</span>
+                            Book Now (WhatsApp)
+                        </button>
+<p class="mt-md text-center font-body-sm text-surface-variant opacity-60">*Pricing is per person and subject to availability.</p>
+</div>
+<!-- Secondary Info -->
+<div class="mt-md bg-surface-container-low p-md rounded-2xl border border-outline-variant/30">
+<h4 class="font-label-md text-primary uppercase mb-sm">Includes</h4>
+<ul class="grid grid-cols-2 gap-sm font-body-sm">
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span> Private AC Coach</li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span> Professional Guide</li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span> Entrance Fees</li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span> Meals as listed</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Bento Gallery -->
+<section class="py-xl bg-surface-container-low">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg mb-lg text-center">Experience the Journey</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:h-[600px]">
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden relative group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A wide shot of the Giza Pyramids during sunset." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCK0_y2vVcPH5EOUGunf2OLMlhKsPSQpUF5ivEYfhwXw2ZHq6E2s0yY4spqsF3nlGHC16aKfntLcMLHlJfXyTdABjsa63HQflIbiT2KpFdn8sqsDTy9jd1ZJGF6gu7TFpYcircdW9UX3BuoUUnxz3QAKtTkLEgaX1Bfb3hiSDaqHf6NwpFQOBo26bfjOy1QQdFqNxSh7scFXpWdtF0loohhhkV6TRZQxHK_tXKgO-h6oNbL4uu-iaCo')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-md">
+<span class="text-white font-headline-md">Timeless Majesty</span>
+</div>
+</div>
+<div class="rounded-2xl overflow-hidden relative group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Interior of an Egyptian perfume factory." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBMlQVWRNN5xEU2dcg1zQ58tdWA-TYwjFtpWruf6aGoMPodyfsnK8mmLTXqw6vlighKDvvKRzbmDliYerJao9-Ecl3H6D6COODxBGuVwwVTBrOlpokoTymmEjmg7WTuDoulcnTm4eYIB_CeRMVpmbklkCzV-gEoh0DbAlXh-j60M0nbIZYXWEPJp2kQRG7RzUjufHMowCwsr9Rdp1TneTFlcwibN_ch2M8dEjB3DE_JcRAOrUESmPw5')"></div>
+</div>
+<div class="rounded-2xl overflow-hidden relative group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Nile River cruise at night." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBJpJybBmD4cRv0OFdqz91jdf60oxP8ZR8-86TF4dQlmFNeHFcUKGblpzkD25rwtEZLHEF9Me48grSRycTkoWiYewhGZ3n3HcGDWVi4cf7ZwXmeXrTiK151E3J5AHSJlHRvowpMZX6VbJQBipkLlOk5BBoe5r-fknt6DCNjmfVR-JQt6y431TRnAoxSRE3rFucnFfMR7rvfgG7_HJNZAxOyFMakrbK9nuyTsVXdLXYQmS5AhMn_kIal')"></div>
+</div>
+<div class="col-span-2 rounded-2xl overflow-hidden relative group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Modern architecture of NMEC Museum." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA7TlxoVjLShBk7eHPZFkD5hit4rZ45OoJo3lxH6PeK7ICvsvZU0nQcCRNTqqa0-yhYWYqnq7j17Tq5KomSyku2PS0MNhNz_FjwJk3pVqQfTNg1M1bahSbT_338gJVliLnbMjGoH6mjadqv2XI1yWb470BztG7MK0YXAVmX5pf4NJHOe9HqwSybmS2Ax_yrV4iBve-rzjbFJtclTe0rxrSk8oDo53aO4F9CmHtU2D4u_RjMNtrG-NeM')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-md">
+<span class="text-white font-headline-md">Historical Legacy</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary text-on-secondary/80 full-width border-t border-primary-container/30 mt-xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-20 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="font-headline-md text-headline-md text-on-secondary font-bold italic">Pesona Cairo</div>
+<p class="text-sm">Biro perjalanan terpercaya untuk Umroh, Haji, dan Wisata Religi dengan fokus pada kenyamanan dan nilai spiritual jamaah.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary-container transition-all" href="https://pesona-cairo.vercel.app/"><span class="material-symbols-outlined text-sm">public</span></a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary-container transition-all" href="https://www.instagram.com/pesonacairo.id"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary-container transition-all" href="https://wa.me/201127847321"><span class="material-symbols-outlined text-sm">call</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-on-secondary font-bold mb-8 uppercase tracking-widest text-xs">Layanan</h4>
+<ul class="space-y-4 text-sm">
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="wisata-cairo.html">Wisata Cairo</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="paket-umroh.html">Paket Trip Cairo</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="la-egypt.html">Land Arrangement Egypt</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="handling.html">Handling</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-on-secondary font-bold mb-8 uppercase tracking-widest text-xs">Perusahaan</h4>
+<ul class="space-y-4 text-sm">
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="tentang-kami.html">Tentang Kami</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Galeri</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="tentang-kami.html">Kontak</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Syarat &amp; Ketentuan</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-on-secondary font-bold mb-8 uppercase tracking-widest text-xs">Hubungi Kami</h4>
+<ul class="space-y-4 text-sm">
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary-fixed-dim">location_on</span> Cairo Office: 15A, El-Gamaleya, El-Gamaliya, Cairo Governorate 4335010, Mesir</li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary-fixed-dim">phone</span> +62 812-3456-7890</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 py-8 px-margin-desktop text-center text-xs opacity-60">
+        © 2024 Pesona Cairo. Terdaftar Kemenag RI / PPIU No. 123456.
+    </div>
+</footer>
+<script>
+    // Smooth scroll for navbar and simple interactions
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 20) {
+            header.classList.add('shadow-md', 'bg-surface');
+            header.classList.remove('bg-surface/95');
+        } else {
+            header.classList.remove('shadow-md');
+            header.classList.add('bg-surface/95');
+        }
+    });
+
+    // Observer for reveal effects
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-4');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.itinerary-line').forEach(el => {
+        el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+        observer.observe(el);
+    });
+</script>
+</body></html>
