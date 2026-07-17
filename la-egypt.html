@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LA Egypt - Pesona Cairo Luxury Travel</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Hanken+Grotesk:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d9dadb",
+                        "on-background": "#191c1d",
+                        "outline-variant": "#bcc9cc",
+                        "surface": "#f8f9fa",
+                        "primary": "#006877",
+                        "on-primary-fixed-variant": "#004e5a",
+                        "on-secondary-fixed-variant": "#004787",
+                        "primary-fixed": "#a2eeff",
+                        "inverse-primary": "#56d7ef",
+                        "on-tertiary-fixed": "#261a00",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#e6c277",
+                        "tertiary-fixed": "#ffdf9f",
+                        "tertiary": "#755a1a",
+                        "surface-container-highest": "#e1e3e4",
+                        "tertiary-container": "#bc9b55",
+                        "error": "#ba1a1a",
+                        "primary-container": "#12afc6",
+                        "on-error-container": "#93000a",
+                        "on-surface": "#191c1d",
+                        "on-secondary-fixed": "#001c3b",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#5b4302",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#001f25",
+                        "background": "#f8f9fa",
+                        "on-surface-variant": "#3d494c",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#a6c8ff",
+                        "inverse-surface": "#2e3132",
+                        "secondary-container": "#7ab0fe",
+                        "secondary": "#1e5fa8",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f3f4f5",
+                        "on-primary-container": "#003d46",
+                        "surface-container": "#edeeef",
+                        "surface-bright": "#f8f9fa",
+                        "outline": "#6d797c",
+                        "surface-variant": "#e1e3e4",
+                        "primary-fixed-dim": "#56d7ef",
+                        "on-secondary-container": "#00427e",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-tertiary-container": "#473300",
+                        "surface-container-high": "#e7e8e9",
+                        "secondary-fixed": "#d5e3ff",
+                        "surface-tint": "#006877",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "xl": "80px",
+                        "lg": "48px",
+                        "xs": "4px",
+                        "margin-desktop": "64px",
+                        "sm": "12px",
+                        "md": "24px",
+                        "gutter": "24px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg": ["Playfair Display"],
+                        "label-md": ["Hanken Grotesk"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-xl": ["Playfair Display"],
+                        "body-sm": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .luxury-gradient {
+            background: linear-gradient(180deg, rgba(25, 28, 29, 0.4) 0%, rgba(25, 28, 29, 0.9) 100%);
+        }
+        .nav-blur {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md">
+<!-- TopNavBar -->
+<nav class="bg-secondary/95 backdrop-blur-md sticky top-0 z-50 border-b border-white/10 shadow-sm">
+
+    <div class="max-w-7xl mx-auto px-4 md:px-margin-desktop h-20 flex items-center justify-between">
+
+        <!-- Logo -->
+        <div class="font-headline-md text-headline-md font-bold italic text-on-secondary">
+            Pesona Cairo
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="index.html">Beranda</a>
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="wisata-cairo.html">Wisata Cairo</a>
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="paket-umroh.html">Paket Trip Cairo</a>
+            <a class="text-primary-fixed font-bold border-b-2 border-primary-fixed pb-1" href="paket-umroh.html">LA Egypt</a>
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="handling.html">Handling</a>
+            <a class="text-on-secondary/80 font-medium hover:text-on-secondary transition-all duration-300" href="tentang-kami.html">Tentang Kami</a>
+        </div>
+
+        <!-- Desktop Button -->
+        <a class="hidden md:block btn bg-primary-container text-on-primary-container px-6 py-2.5 font-bold rounded-lg hover:bg-primary-fixed transition-all active:scale-95 duration-200"
+           href="https://wa.me/201127847321">
+            Konsultasi Gratis
+        </a>
+
+        <!-- Mobile Hamburger -->
+        <button id="menuBtn" class="md:hidden text-white text-3xl">
+            &#9776;
+        </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-secondary border-t border-white/10">
+
+        <div class="flex flex-col p-4 space-y-4">
+
+            <a href="index.html">Beranda</a>
+            <a href="wisata-cairo.html">Wisata Cairo</a>
+            <a href="paket-umroh.html">Paket Trip Cairo</a>
+            <a href="la-egypt.html">LA Egypt</a>
+            <a href="handling.html">Handling</a>
+            <a href="tentang-kami.html">Tentang Kami</a>
+
+            <!-- Mobile Konsultasi -->
+            <a class="btn bg-primary-container text-on-primary-container px-6 py-3 rounded-lg text-center font-bold"
+               href="https://wa.me/201127847321">
+                Konsultasi Gratis
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+<main class="relative overflow-hidden">
+<main>
+<!-- Hero Section -->
+<section class="relative h-[819px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-[10000ms] hover:scale-110" data-alt="A breathtaking panoramic view of the Great Pyramids of Giza during a golden hour sunset. The massive limestone structures are silhouetted against a vibrant orange and purple sky. In the foreground, the soft desert sand transitions into shadows, creating a deep sense of scale and ancient mystery. The lighting is editorial and high-end, capturing the serene majesty of Cairo's iconic landmark." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCKkyZ8D4LqrzPuI1lgjlAAsczvv4klz-5GfmUyOi5t6g-5X68iQIyPWtzzC6EJrYZZDG4Z-bafGnqvmGDjji8cQpVhec-Df07KTG6liSfdahJO0hpzA6cR-P8nv2ovmg_0AnNYCk12-MefJbGnSYTTZvAQLO6iE3ZJdhK0cM-n02L83mNAcXHqdH4JG1xOQwoQSL-aiBOeu62yLiCPLCiuATzdgAC_e99zVpk6gKdM0_XOO-ykOEG')">
+</div>
+<div class="absolute inset-0 luxury-gradient"></div>
+</div>
+<div class="relative z-10 px-margin-desktop max-w-screen-2xl mx-auto w-full">
+<div class="max-w-2xl fade-up">
+<h1 class="font-headline-xl text-headline-xl text-white mb-4">LA Egypt</h1>
+<p class="font-body-lg text-body-lg text-surface-variant mb-xl leading-relaxed">
+                        Private Egypt Tour &amp; Cairo Transit Packages designed for the discerning traveler seeking comfort, exclusivity, and profound discovery.
+                    </p>
+<div class="flex gap-md">
+<button class="bg-primary text-on-primary px-xl py-4 rounded-xl font-label-md hover:shadow-lg transition-all">
+                            Book Now
+                        </button>
+<button class="border border-white text-white px-xl py-4 rounded-xl font-label-md hover:bg-white/10 transition-all">
+                            View Packages
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Package Catalog Grid -->
+<section class="py-xl px-margin-desktop max-w-screen-2xl mx-auto">
+<div class="flex flex-col items-center mb-lg text-center fade-up">
+<span class="text-primary font-label-md tracking-[0.2em] uppercase mb-sm">Exclusive Catalog</span>
+<h2 class="font-headline-lg text-headline-lg">Our Premium Packages</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all fade-up">
+<div class="h-64 overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A luxury hotel room balcony overlooking the Nile River in Cairo. The scene is bright and airy, featuring white linen furniture and a crystal clear view of the water reflecting the morning sun. The aesthetic is modern and sophisticated, emphasizing the high-end hospitality of Egyptian travel. Cairo Turquoise accents in the decor bridge the gap between contemporary design and local heritage." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYQXfLgToICzeTqvoH4VM95cjU-uxOSBsPHR9n7aHXzbDPRrHbfKg51oK4RdYsQeqRD__aZMb0fh0atfMj6zmxOv-7X7QwOGHzACUeYQ0NMNj6MJEt6GAywYJ4VO_7zTpnYwhpB6EC66ngcczI5Vo96ikEadpDSGCX4xpgUUnk7x4eZIMLzPfHdzQg9lZF5rdOiqrxHCayluRE52bhB3c_IyCyEcEeJTuKeMzuDL5ZMXXzFQ1N_M67')">
+</div>
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-widest">Premium</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md mb-2">Package 2 Days 1 Night</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Experience the essence of Cairo with an overnight stay and pyramid explorations.</p>
+<div class="flex flex-col gap-sm">
+<button class="w-full py-2 bg-primary text-on-primary rounded-lg font-label-md hover:bg-on-primary-fixed-variant transition-colors">Pesan Sekarang</button>
+<button class="w-full py-2 border border-outline text-primary rounded-lg font-label-md hover:bg-surface-container-low transition-colors">Detail</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all fade-up" style="transition-delay: 100ms;">
+<div class="h-64 overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A serene felucca sailboat gliding on the Nile River at dusk. The sky is painted in soft pastels of pink and gold, with the silhouettes of palm trees lining the distant riverbank. The lighting is soft and ambient, creating a romantic and peaceful atmosphere. The image captures the timeless tranquility of Egyptian travel away from the bustling city streets." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBLqYJ-ewa0zVmYxn-dQUG2oGSsz-WdxwxBepm8V_8iPxL8ZF5xZTw9THE05aL_RwQ2ET436cStLPMGs0aUS0vLTSQ83PKfX0R418c0eeEyv7NJI1m4XaUSZPbExK5sAEGmkApqKJcB61FoWQ_kYl0BbtCmy7iPJt5j2Vzh9HQMbSHaFrMIZrGUwPhBFeJmgN8CZO7Y8amU49Qzw1210Q3JdTThYmu9vy6WZ-BGMxsIyLMGuiCFiWtK')">
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md mb-2">Package 3 Days 2 Nights</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">A deeper dive into the heart of Egypt, featuring Old Cairo and the Great Museum.</p>
+<div class="flex flex-col gap-sm">
+<button class="w-full py-2 bg-primary text-on-primary rounded-lg font-label-md hover:bg-on-primary-fixed-variant transition-colors">Pesan Sekarang</button>
+<button class="w-full py-2 border border-outline text-primary rounded-lg font-label-md hover:bg-surface-container-low transition-colors">Detail</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all fade-up" style="transition-delay: 200ms;">
+<div class="h-64 overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A detailed view of intricate hieroglyphics carved into a massive sandstone column at the Karnak Temple complex. The golden light of the sun hits the carvings at an angle, highlighting the depth and craftsmanship of the ancient Egyptian artists. The scene is majestic and historic, reflecting the rich cultural heritage and editorial quality of our tours." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-wDxtvyLHFJwR2Tj5AbHkY5Ym4Ms_jG0lv4cA02Y1Q6fl5hkAwBAQWb9no7OjwRxR0sij-33kiWDji2dVO_DumoAEf8SciDthz6hm7W-17S0bDElA1m6EP6MqIvXlVZpFyQnLhSTybR_DSF0DyTiTJ5USQeCJ9jDPv-3tfmQUphMBqx6qRfPAP-CTPa0ScnscMmMA743-w_2qOIRm3QE7OHfIxTvynDD4h-uuOiXqeq1V9IofiJNA')">
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md mb-2">Package 4 Days 3 Nights</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">The ultimate Cairo discovery, including Saqqara, Memphis, and luxury Nile dining.</p>
+<div class="flex flex-col gap-sm">
+<button class="w-full py-2 bg-primary text-on-primary rounded-lg font-label-md hover:bg-on-primary-fixed-variant transition-colors">Pesan Sekarang</button>
+<button class="w-full py-2 border border-outline text-primary rounded-lg font-label-md hover:bg-surface-container-low transition-colors">Detail</button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all fade-up" style="transition-delay: 300ms;">
+<div class="h-64 overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A premium airport lounge interior with large windows overlooking the tarmac at Cairo International Airport. The space is filled with comfortable leather seating, marble surfaces, and soft, recessed warm lighting. A professional chauffeur in a clean suit stands holding a personalized welcome sign, symbolizing our exclusive transit handling services." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCt_YLODgbzWbJHPKlzztnQlvp3DU0dZfE1Qp5-NJFJocoHXA9IOzoNElB0BJPLyvHTEDhLsWAcHuWuSwrV_4BoHYAUB2kBv3JnW7QiQkwVEI-cHVPgugSZGhQmhgDsHB9QgPDp6SQo-Vh6E6aiwWhNJRBvlEMzBhbVEtEizQLg80_P42glnQmPlBGQLmwSCG0TrIXnKYajXqAiXxU-jKCK5MKUiHETN0G03en-7f20uIYURkNnTETL')">
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-md text-headline-md mb-2">Cairo Transit Package</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Make the most of your layover with private transfers and a swift tour of Giza.</p>
+<div class="flex flex-col gap-sm">
+<button class="w-full py-2 bg-primary text-on-primary rounded-lg font-label-md hover:bg-on-primary-fixed-variant transition-colors">Pesan Sekarang</button>
+<button class="w-full py-2 border border-outline text-primary rounded-lg font-label-md hover:bg-surface-container-low transition-colors">Detail</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Include & Exclude Section -->
+<section class="py-xl bg-surface-container-low">
+<div class="px-margin-desktop max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl">
+<!-- Include Card -->
+<div class="bg-surface-container-lowest p-xl rounded-xl shadow-sm fade-up">
+<div class="flex items-center gap-md mb-lg">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+<h3 class="font-headline-md text-headline-md">Package Includes</h3>
+</div>
+<ul class="space-y-4">
+<li class="flex items-center gap-md text-on-surface-variant border-b border-surface-variant pb-2">
+<span class="material-symbols-outlined text-primary text-sm">done</span>
+<span class="font-body-md">Visa on Arrival Assistance</span>
+</li>
+<li class="flex items-center gap-md text-on-surface-variant border-b border-surface-variant pb-2">
+<span class="material-symbols-outlined text-primary text-sm">done</span>
+<span class="font-body-md">Luxury Hotel Accommodations</span>
+</li>
+<li class="flex items-center gap-md text-on-surface-variant border-b border-surface-variant pb-2">
+<span class="material-symbols-outlined text-primary text-sm">done</span>
+<span class="font-body-md">Full AC Private Transportation</span>
+</li>
+<li class="flex items-center gap-md text-on-surface-variant border-b border-surface-variant pb-2">
+<span class="material-symbols-outlined text-primary text-sm">done</span>
+<span class="font-body-md">Gourmet Meals (Breakfast, Lunch, Dinner)</span>
+</li>
+<li class="flex items-center gap-md text-on-surface-variant border-b border-surface-variant pb-2">
+<span class="material-symbols-outlined text-primary text-sm">done</span>
+<span class="font-body-md">Entrance Tickets to All Sites</span>
+</li>
+<li class="flex items-center gap-md text-on-surface-variant border-b border-surface-variant pb-2">
+<span class="material-symbols-outlined text-primary text-sm">done</span>
+<span class="font-body-md">Professional Multilingual Tour Guide</span>
+</li>
+<li class="flex items-center gap-md text-on-surface-variant border-b border-surface-variant pb-2">
+<span class="material-symbols-outlined text-primary text-sm">done</span>
+<span class="font-body-md">Professional Photographer Documentation</span>
+</li>
+</ul>
+</div>
+<!-- Exclude Card -->
+<div class="bg-surface-container-lowest p-xl rounded-xl shadow-sm fade-up" style="transition-delay: 200ms;">
+<div class="flex items-center gap-md mb-lg">
+<div class="w-12 h-12 bg-error/10 rounded-full flex items-center justify-center text-error">
+<span class="material-symbols-outlined">cancel</span>
+</div>
+<h3 class="font-headline-md text-headline-md">Package Excludes</h3>
+</div>
+<ul class="space-y-4">
+<li class="flex items-center gap-md text-on-surface-variant border-b border-surface-variant pb-2">
+<span class="material-symbols-outlined text-error text-sm">close</span>
+<span class="font-body-md">International Airline Tickets</span>
+</li>
+<li class="flex items-center gap-md text-on-surface-variant border-b border-surface-variant pb-2">
+<span class="material-symbols-outlined text-error text-sm">close</span>
+<span class="font-body-md">Everything Not Mentioned Above</span>
+</li>
+</ul>
+<div class="mt-lg p-md bg-secondary-container/20 rounded-lg border border-secondary-container/30">
+<p class="font-body-sm text-on-secondary-container italic">
+                                *Custom arrangements can be made upon request. Contact our travel consultants for bespoke exclusions or additions.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary text-on-secondary/80 full-width border-t border-primary-container/30 mt-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="space-y-6">
+<div class="font-headline-md text-headline-md text-on-secondary font-bold italic">Pesona Cairo</div>
+<p class="text-sm">Biro perjalanan terpercaya untuk Umroh, Haji, dan Wisata Religi dengan fokus pada kenyamanan dan nilai spiritual jamaah.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary-container transition-all" href="https://pesona-cairo.vercel.app/"><span class="material-symbols-outlined text-sm">public</span></a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary-container transition-all" href="https://www.instagram.com/pesonacairo.id"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary-container transition-all" href="https://wa.me/201127847321"><span class="material-symbols-outlined text-sm">call</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-on-secondary font-bold mb-8 uppercase tracking-widest text-xs">Layanan</h4>
+<ul class="space-y-4 text-sm">
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="wisata-cairo.html">Wisata Cairo</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="paket-umroh.html">Paket Trip Cairo</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="la-egypt.html">Land Arrangement Egypt</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="handling.html">Handling</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-on-secondary font-bold mb-8 uppercase tracking-widest text-xs">Perusahaan</h4>
+<ul class="space-y-4 text-sm">
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="tentang-kami.html">Tentang Kami</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Galeri</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="tentang-kami.html">Kontak</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Syarat &amp; Ketentuan</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-on-secondary font-bold mb-8 uppercase tracking-widest text-xs">Hubungi Kami</h4>
+<ul class="space-y-4 text-sm">
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary-fixed-dim">location_on</span> Cairo Office: 15A, El-Gamaleya, El-Gamaliya, Cairo Governorate 4335010, Mesir</li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary-fixed-dim">phone</span> +62 812-3456-7890</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 py-8 px-margin-desktop text-center text-xs opacity-60">
+        © 2024 Pesona Cairo. Terdaftar Kemenag RI / PPIU No. 123456.
+    </div>
+</footer>
+<script>
+        // Intersection Observer for fade-up animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        // Simple scroll effect for navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'shadow-md');
+                nav.classList.remove('py-4', 'shadow-sm');
+            } else {
+                nav.classList.add('py-4', 'shadow-sm');
+                nav.classList.remove('py-2', 'shadow-md');
+            }
+        });
+    </script>
+</body></html>
