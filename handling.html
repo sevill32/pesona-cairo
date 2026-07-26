@@ -220,57 +220,141 @@
 </section>
 <!-- Inquiry Form Section -->
 <section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
-<div class="bg-inverse-surface text-inverse-on-surface rounded-2xl overflow-hidden grid md:grid-cols-2 shadow-2xl">
-<div class="p-12 md:p-20 flex flex-col justify-center">
-<span class="font-label-md text-primary-fixed mb-4 block uppercase tracking-widest">B2B INQUIRY</span>
-<h2 class="font-headline-lg text-headline-lg mb-6">Kerja Sama Travel Agent</h2>
-<p class="text-body-lg opacity-80 mb-8">Dapatkan harga khusus kontrak (Wholesale) untuk grup besar atau keberangkatan rutin. Tim kemitraan kami akan menghubungi Anda dalam 24 jam.</p>
-<div class="space-y-6">
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary-fixed">mail</span>
-<span class="text-body-md">agent@pesonacairo.com</span>
-</div>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary-fixed">call</span>
-<span class="text-body-md">+20 123 456 789 (Cairo HQ)</span>
-</div>
-</div>
-</div>
-<div class="bg-surface-container-highest p-12 md:p-20">
-<form action="#" class="space-y-6">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-<div>
-<label class="font-label-md text-on-surface-variant mb-2 block uppercase">Nama Travel</label>
-<input class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-primary-container focus:ring-0 focus:border-primary p-2 text-on-surface" placeholder="PT. Amanah Wisata" type="text"/>
-</div>
-<div>
-<label class="font-label-md text-on-surface-variant mb-2 block uppercase">Izin PPIU</label>
-<input class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-primary-container focus:ring-0 focus:border-primary p-2 text-on-surface" placeholder="No. 123/202X" type="text"/>
-</div>
-</div>
-<div>
-<label class="font-label-md text-on-surface-variant mb-2 block uppercase">Nama PIC</label>
-<input class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-primary-container focus:ring-0 focus:border-primary p-2 text-on-surface" placeholder="H. Muhammad Abdullah" type="text"/>
-</div>
-<div>
-<label class="font-label-md text-on-surface-variant mb-2 block uppercase">Layanan Diminati</label>
-<select class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-primary-container focus:ring-0 focus:border-primary p-2 text-on-surface">
-<option>Visa &amp; Handling Mesir</option>
-<option>Handling Saudi Arabia</option>
-<option>Full Package (Saudi + Mesir)</option>
-<option>Hanya Visa</option>
-</select>
-</div>
-<div>
-<label class="font-label-md text-on-surface-variant mb-2 block uppercase">Estimasi Pax</label>
-<textarea class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-primary-container focus:ring-0 focus:border-primary p-2 text-on-surface" placeholder="Contoh: Rencana 45 Pax keberangkatan November..." rows="3"></textarea>
-</div>
-<button class="w-full bg-primary text-on-primary py-4 font-label-md rounded-lg hover:bg-primary-container transition-all shadow-lg flex justify-center items-center gap-2 uppercase tracking-widest" type="submit">
-                            KIRIM PENGAJUAN <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</form>
-</div>
-</div>
+    <div class="bg-inverse-surface text-inverse-on-surface rounded-2xl overflow-hidden grid md:grid-cols-2 shadow-2xl">
+
+        <!-- Left -->
+        <div class="p-12 md:p-20 flex flex-col justify-center">
+            <span class="font-label-md text-primary-fixed mb-4 block uppercase tracking-widest">
+                B2B INQUIRY
+            </span>
+
+            <h2 class="font-headline-lg text-headline-lg mb-6">
+                Kerja Sama Travel Agent
+            </h2>
+
+            <p class="text-body-lg opacity-80 mb-8">
+                Dapatkan harga khusus kontrak (Wholesale) untuk grup besar atau keberangkatan rutin.
+                Tim kemitraan kami akan menghubungi Anda dalam 24 jam.
+            </p>
+
+            <div class="space-y-6">
+
+                <div class="flex items-center gap-4">
+                    <span class="material-symbols-outlined text-primary-fixed">mail</span>
+                    <span class="text-body-md">agent@pesonacairo.com</span>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <span class="material-symbols-outlined text-primary-fixed">call</span>
+                    <span class="text-body-md">+20 112 784 7321 (Cairo HQ)</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Right -->
+        <div class="bg-surface-container-highest p-12 md:p-20">
+
+            <form id="b2bForm" class="space-y-6">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                    <div>
+                        <label class="font-label-md text-on-surface-variant mb-2 block uppercase">
+                            Nama Travel
+                        </label>
+
+                        <input
+                            id="namaTravel"
+                            type="text"
+                            required
+                            placeholder="PT. Amanah Wisata"
+                            class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-primary-container focus:ring-0 focus:border-primary p-2 text-on-surface">
+                    </div>
+
+                    <div>
+                        <label class="font-label-md text-on-surface-variant mb-2 block uppercase">
+                            Izin PPIU
+                        </label>
+
+                        <input
+                            id="ppiu"
+                            type="text"
+                            required
+                            placeholder="No. 123/202X"
+                            class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-primary-container focus:ring-0 focus:border-primary p-2 text-on-surface">
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <label class="font-label-md text-on-surface-variant mb-2 block uppercase">
+                        Nama PIC
+                    </label>
+
+                    <input
+                        id="pic"
+                        type="text"
+                        required
+                        placeholder="H. Muhammad Abdullah"
+                        class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-primary-container focus:ring-0 focus:border-primary p-2 text-on-surface">
+
+                </div>
+
+                <div>
+
+                    <label class="font-label-md text-on-surface-variant mb-2 block uppercase">
+                        Layanan Diminati
+                    </label>
+
+                    <select
+                        id="layanan"
+                        required
+                        class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-primary-container focus:ring-0 focus:border-primary p-2 text-on-surface">
+
+                        <option value="">Pilih Layanan</option>
+                        <option>Visa & Handling Mesir</option>
+                        <option>Handling Saudi Arabia</option>
+                        <option>Full Package (Saudi + Mesir)</option>
+                        <option>Hanya Visa</option>
+
+                    </select>
+
+                </div>
+
+                <div>
+
+                    <label class="font-label-md text-on-surface-variant mb-2 block uppercase">
+                        Estimasi Pax
+                    </label>
+
+                    <textarea
+                        id="estimasi"
+                        rows="3"
+                        required
+                        placeholder="Contoh: Rencana 45 Pax keberangkatan November..."
+                        class="w-full bg-transparent border-t-0 border-x-0 border-b-2 border-primary-container focus:ring-0 focus:border-primary p-2 text-on-surface"></textarea>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="w-full bg-primary text-on-primary py-4 font-label-md rounded-lg hover:bg-primary-container transition-all shadow-lg flex justify-center items-center gap-2 uppercase tracking-widest">
+
+                    Kirim Pengajuan
+
+                    <span class="material-symbols-outlined text-sm">
+                        arrow_forward
+                    </span>
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
 </section>
 </main>
 <!-- Footer -->
@@ -317,12 +401,78 @@
 </footer>
 <script src="script.js"></script>
 <script>
+// ===============================
+// MOBILE MENU
+// ===============================
 const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 
-menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-});
+if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+}
+
+// ===============================
+// FORM B2B -> WHATSAPP
+// ===============================
+const b2bForm = document.getElementById("b2bForm");
+
+if (b2bForm) {
+
+    b2bForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const namaTravel = document.getElementById("namaTravel").value.trim();
+        const ppiu = document.getElementById("ppiu").value.trim();
+        const pic = document.getElementById("pic").value.trim();
+        const layanan = document.getElementById("layanan").value;
+        const estimasi = document.getElementById("estimasi").value.trim();
+
+        if (!namaTravel || !ppiu || !pic || !layanan || !estimasi) {
+            alert("Silakan lengkapi semua data.");
+            return;
+        }
+
+        const nomorAdmin = "201127847321";
+
+        const isiPesan =
+`Halo Pesona Cairo,
+
+Saya ingin mengajukan kerja sama sebagai Travel Agent.
+
+━━━━━━━━━━━━━━
+
+Nama Travel :
+${namaTravel}
+
+Izin PPIU :
+${ppiu}
+
+Nama PIC :
+${pic}
+
+Layanan Diminati :
+${layanan}
+
+Estimasi Pax :
+${estimasi}
+
+━━━━━━━━━━━━━━
+
+Mohon informasi lebih lanjut mengenai kerja sama B2B.
+
+Terima kasih.`;
+
+        const url =
+`https://wa.me/${nomorAdmin}?text=${encodeURIComponent(isiPesan)}`;
+
+        window.open(url, "_blank");
+
+    });
+
+}
 </script>
 
 </body>
